@@ -1,0 +1,35 @@
+{
+  "item.crystechmod.yokarite": "Yokarite",
+  "item.crystechmod.tiberium": "Riparius Tiberium Crystal",
+  "item.crystechmod.tiberium_blue": "Vinifera Tiberium Crystal",
+  "item.crystechmod.firestone": "Firestone",
+  "item.crystechmod.tiberium_bucket": "Liquid Tiberium Bucket",
+
+
+  "block.crystechmod.amethyst_ore": "Amethyst Ore",
+  "block.crystechmod.yokarite_ore": "Yokarite Ore",
+  "block.crystechmod.tiberium_ore": "Tiberium Ore",
+  "block.crystechmod.yokarite_block": "Yokarite Block",
+  "block.crystechmod.tiberium_block": "Tiberium Block",
+  "block.crystechmod.tiberium_blue_block": "Blue Tiberium Block",
+  "block.crystechmod.firestone_block": "Firestone Block",
+  "block.crystechmod.hyacinth": "Hyacinth",
+  "block.crystechmod.flower_of_life": "Flower of Life",
+  "block.crystechmod.lightning_channeler": "Lightning Channeler",
+  "block.crystechmod.green_tiberium_crop": "Riparius Tiberium Dust",
+  "block.crystechmod.tiberium_soil": "Tiberium Soil",
+  "block.crystechmod.blue_tiberium_crop": "Vinifera Tiberium Dust",
+
+
+  "fluid.crystechmod.tiberium_fluid": "Liquid Tiberium",
+
+
+  "screen.crystechmod.lightning_channeler": "Lightning Channeler",
+
+
+  "itemGroup.CrysTechTab": "Crystal Technology",
+
+
+  "tooltip.crystechmod.firestone": "Hold \u00A7e SHIFT \u00A7r for more information.",
+  "tooltip.crystechmod.firestone_shift": "Might set you on fire, but might also protect from it!"
+}

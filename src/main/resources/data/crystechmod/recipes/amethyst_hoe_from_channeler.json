@@ -1,0 +1,15 @@
+{
+  "type": "crystechmod:lightning",
+  "weather": "clear",
+  "ingredients": [
+    {
+      "item": "crystechmod:amethyst"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "output": {
+    "item": "crystechmod:amethyst_hoe"
+  }
+}

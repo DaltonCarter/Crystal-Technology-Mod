@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "crystechmod:yokarite_block"
+    }
+  ],
+  "result": {
+    "item": "crystechmod:yokarite",
+    "count": 9
+  }
+}
