@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "crystechmod:plagued_planks"
+    }
+  },
+  "result": {
+    "item": "crystechmod:plagued_pressure_plate"
+  }
+}

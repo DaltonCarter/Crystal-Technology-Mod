@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "crystechmod:tiberium_flowing",
-    "crystechmod:tiberium_fluid"
+    "crystechmod:tiberium_fluid",
+    "crystechmod:blue_tiberium_flowing",
+    "crystechmod:blue_tiberium_fluid"
   ]
 }

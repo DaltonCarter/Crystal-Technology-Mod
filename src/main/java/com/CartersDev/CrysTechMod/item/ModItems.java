@@ -20,7 +20,7 @@ public class ModItems {
             = DeferredRegister.create(ForgeRegistries.ITEMS, CrystalTech.MOD_ID);
 
     public static final RegistryObject<Item> FIRESTONE = ITEMS.register("firestone",
-            () -> new Firestone(new Item.Properties().group(ModItemGroup.CRYS_TECH).maxDamage(8)));
+            () -> new Firestone(new Item.Properties().setNoRepair().group(ModItemGroup.CRYS_TECH).maxDamage(8)));
 
     public static final RegistryObject<Item> YOKARITE = ITEMS.register("yokarite",
             () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
@@ -35,6 +35,14 @@ public class ModItems {
             () -> new BucketItem(() -> ModFluids.TIBERIUM_FLUID.get(),
                     new Item.Properties().maxStackSize(1).group(ModItemGroup.CRYS_TECH)));
 
+    public static final RegistryObject<Item> BLUE_TIBERIUM_BUCKET = ITEMS.register("blue_tiberium_bucket",
+            () -> new BucketItem(() -> ModFluids.BLUE_TIBERIUM_FLUID.get(),
+                    new Item.Properties().maxStackSize(1).group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> TIBERIUM_WATER_BUCKET = ITEMS.register("tiberium_water_bucket",
+            () -> new BucketItem(() -> ModFluids.TIBERIUM_WATER_FLUID.get(),
+                    new Item.Properties().maxStackSize(1).group(ModItemGroup.CRYS_TECH)));
+
     public static final RegistryObject<Item> GREEN_TIBERIUM_DUST = ITEMS.register("green_tiberium_dust",
             () -> new BlockItem(ModBlocks.GREEN_TIBERIUM_CROP.get(), new Item.Properties()
                     .food(new Food.Builder().fastToEat().effect(() -> new EffectInstance(Effects.POISON, 100, 0), 1f)
@@ -45,29 +53,37 @@ public class ModItems {
                     .food(new Food.Builder().fastToEat().effect(() -> new EffectInstance(Effects.POISON, 100, 2), 1f)
                             .build()).group(ModItemGroup.CRYS_TECH)));
 
+    public static final RegistryObject<Item> PLAGUED_STICK = ITEMS.register("plagued_stick",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> TIBERIUM_FRUIT = ITEMS.register("tiberium_fruit",
+            () -> new Item(new Item.Properties().food(new Food.Builder().hunger(4).saturation(0.1f)
+                    .fastToEat().effect(() -> new EffectInstance(Effects.WEAKNESS, 100, 2), 1f)
+                            .build()).group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> PLAGUED_SWORD = ITEMS.register("plagued_sword",
+            () -> new SwordItem(ModitemTier.PLAGUED, 2, 3f,
+                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> PLAGUED_AXE = ITEMS.register("plagued_axe",
+            () -> new AxeItem(ModitemTier.PLAGUED, 4, -6f,
+                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> PLAGUED_PICKAXE = ITEMS.register("plagued_pickaxe",
+            () -> new PickaxeItem(ModitemTier.PLAGUED, 0, -1f,
+                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> PLAGUED_SHOVEL = ITEMS.register("plagued_shovel",
+            () -> new ShovelItem(ModitemTier.PLAGUED, 0, -1f,
+                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> PLAGUED_HOE = ITEMS.register("plagued_hoe",
+            () -> new HoeItem(ModitemTier.PLAGUED, 0, 0f,
+                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
 
     //Reference Items
 
-//    public static final RegistryObject<Item> AMETHYST_SWORD = ITEMS.register("amethyst_sword",
-//            () -> new SwordItem(ModitemTier.AMETHYST, 2, 3f,
-//                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
-//
-//    public static final RegistryObject<Item> AMETHYST_AXE = ITEMS.register("amethyst_axe",
-//            () -> new AxeItem(ModitemTier.AMETHYST, 4, -6f,
-//                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
-//
-//    public static final RegistryObject<Item> AMETHYST_PICKAXE = ITEMS.register("amethyst_pickaxe",
-//            () -> new PickaxeItem(ModitemTier.AMETHYST, 0, -1f,
-//                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
-//
-//    public static final RegistryObject<Item> AMETHYST_SHOVEL = ITEMS.register("amethyst_shovel",
-//            () -> new ShovelItem(ModitemTier.AMETHYST, 0, -1f,
-//                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
-//
-//    public static final RegistryObject<Item> AMETHYST_HOE = ITEMS.register("amethyst_hoe",
-//            () -> new HoeItem(ModitemTier.AMETHYST, 0, 0f,
-//                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
-//
 //    public static final RegistryObject<Item> AMETHYST_HELMET = ITEMS.register("amethyst_helmet",
 //            () -> new ArmorItem(ModArmorMaterial.AMETHYST, EquipmentSlotType.HEAD,
 //                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));

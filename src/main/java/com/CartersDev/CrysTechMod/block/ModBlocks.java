@@ -23,24 +23,21 @@ import java.util.function.ToIntFunction;
 
 public class ModBlocks {
 
-    public static ToIntFunction<BlockState> tiberiumglow = BlockState -> 10;
+    public static ToIntFunction<BlockState> tiberiumglow = BlockState -> 7;
 
     public static final DeferredRegister<Block> BLOCKS
             = DeferredRegister.create(ForgeRegistries.BLOCKS, CrystalTech.MOD_ID);
-    
+
+    //Ordinary Blocks:
+
+    public static final RegistryObject<Block> TIBERIUM_SOIL = registerBlock("tiberium_soil",
+            () -> new TiberiumSoil(AbstractBlock.Properties.create(Material.EARTH)
+                    .harvestLevel(3).harvestTool(ToolType.SHOVEL).tickRandomly()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
     public static final RegistryObject<Block> FIRESTONE_BLOCK = registerBlock("firestone_block",
             () -> new FirestoneBlock(AbstractBlock.Properties.create(Material.IRON)
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE)
-                    .setRequiresTool().hardnessAndResistance(5f)));
-
-    public static final RegistryObject<Block> YOKARITE_ORE = registerBlock("yokarite_ore",
-            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
-                    .setRequiresTool().hardnessAndResistance(5f)));
-
-    public static final RegistryObject<Block> TIBERIUM_ORE = registerBlock("tiberium_ore",
-            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> YOKARITE_BLOCK = registerBlock("yokarite_block",
@@ -57,78 +54,174 @@ public class ModBlocks {
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(3).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
+    //End Ordinary Blocks
 
+    //Wood:
+
+    public static final RegistryObject<Block> PLAGUED_LOG = registerBlock("plagued_log",
+            () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_LOG)) {
+                @Override
+                public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+                    return 5;
+                }
+            });
+
+    public static final RegistryObject<Block> PLAGUED_WOOD = registerBlock("plagued_wood",
+            () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_WOOD)) {
+                @Override
+                public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+                    return 5;
+                }
+            });
+
+    public static final RegistryObject<Block> STRIPPED_PLAGUED_LOG = registerBlock("stripped_plagued_log",
+            () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_LOG)) {
+                @Override
+                public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+                    return 5;
+                }
+            });
+
+    public static final RegistryObject<Block> STRIPPED_PLAGUED_WOOD = registerBlock("stripped_plagued_wood",
+            () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_WOOD)) {
+                @Override
+                public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+                    return 5;
+                }
+            });
+
+
+    public static final RegistryObject<Block> PLAGUED_PLANKS = registerBlock("plagued_planks",
+            () -> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)) {
+                @Override
+                public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+                    return 5;
+                }
+            });
+    //End Wood
+
+    //Deco Blocks:
+
+    public static final RegistryObject<Block> PLAGUED_STAIRS = registerBlock("plagued_stairs",
+            () -> new StairsBlock(() -> PLAGUED_PLANKS.get().getDefaultState(),
+                    AbstractBlock.Properties.create(Material.WOOD).harvestLevel(3)
+                            .harvestTool(ToolType.AXE).setRequiresTool()));
+
+    public static final RegistryObject<Block> PLAGUED_FENCE = registerBlock("plagued_fence",
+            () -> new FenceBlock(AbstractBlock.Properties.create(Material.WOOD)
+                    .harvestLevel(2).harvestTool(ToolType.AXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> PLAGUED_FENCE_GATE = registerBlock("plagued_fence_gate",
+            () -> new FenceGateBlock(AbstractBlock.Properties.create(Material.WOOD)
+                    .harvestLevel(2).harvestTool(ToolType.AXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> PLAGUED_SLAB = registerBlock("plagued_slab",
+            () -> new SlabBlock(AbstractBlock.Properties.create(Material.WOOD)
+                    .harvestLevel(2).harvestTool(ToolType.AXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> PLAGUED_BUTTON = registerBlock("plagued_button",
+            () -> new StoneButtonBlock(AbstractBlock.Properties.create(Material.WOOD)
+                    .harvestLevel(2).harvestTool(ToolType.AXE)
+                    .setRequiresTool().hardnessAndResistance(5f)
+                    .doesNotBlockMovement()));
+
+    public static final RegistryObject<Block> PLAGUED_PRESSURE_PLATE = registerBlock("plagued_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, AbstractBlock.Properties
+                    .create(Material.WOOD).harvestLevel(2).harvestTool(ToolType.AXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> PLAGUED_DOOR = registerBlock("plagued_door",
+            () -> new DoorBlock( AbstractBlock.Properties.create(Material.WOOD).harvestLevel(2)
+                    .harvestTool(ToolType.AXE).setRequiresTool().hardnessAndResistance(5f)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> PLAGUED_TRAPDOOR = registerBlock("plagued_trapdoor",
+            () -> new TrapDoorBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(2)
+                    .harvestTool(ToolType.AXE).setRequiresTool().hardnessAndResistance(5f)
+                    .notSolid()));
+
+    //end Deco Blocks
+
+    //Ores:
+    public static final RegistryObject<Block> YOKARITE_ORE = registerBlock("yokarite_ore",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> TIBERIUM_ORE = registerBlock("tiberium_ore",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+    //End Ores
+
+
+    //Flowers:
     public static final RegistryObject<Block> FLOWER_OF_LIFE = registerBlock("flower_of_life",
             () -> new FlowerBlock(Effects.REGENERATION, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> HYACINTH = registerBlock("hyacinth",
+            () -> new FlowerBlock(Effects.HASTE, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+    //End Flowers
+
+
+    //Crops:
 
     public static final RegistryObject<Block> GREEN_TIBERIUM_CROP = BLOCKS.register("green_tiberium_crop",
             () -> new GreenTiberiumCrystalBlock(AbstractBlock.Properties.create(Material.IRON)
                     .harvestLevel(3).doesNotBlockMovement().harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)));
 
-    public static final RegistryObject<Block> TIBERIUM_SOIL = registerBlock("tiberium_soil",
-            () -> new TiberiumSoil(AbstractBlock.Properties.create(Material.EARTH)
-                    .harvestLevel(3).harvestTool(ToolType.SHOVEL).tickRandomly()
-                    .setRequiresTool().hardnessAndResistance(5f)));
-
     public static final RegistryObject<Block> BLUE_TIBERIUM_CROP = BLOCKS.register("blue_tiberium_crop",
             () -> new BlueTiberiumCrystalBlock(AbstractBlock.Properties.create(Material.IRON)
                     .harvestLevel(3).doesNotBlockMovement().harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)));
-    
-    public static final RegistryObject<Block> HYACINTH = registerBlock("hyacinth",
-            () -> new FlowerBlock(Effects.HASTE, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+    //End Crops
 
+
+    //Tile Entities and Machines:
+    
     public static final RegistryObject<Block> LIGHTNING_CHANNELER = registerBlock("lightning_channeler",
             () -> new LightningChannelerBlock(AbstractBlock.Properties.create(Material.IRON)));
-    
-    
+    //End Tile Entities and Machines
+
+
+
+
     //Reference Entries
-//    public static final RegistryObject<Block> AMETHYST_STAIRS = registerBlock("amethyst_stairs",
-//            () -> new StairsBlock(() -> AMETHYST_BLOCK.get().getDefaultState(),
-//                    AbstractBlock.Properties.create(Material.IRON).harvestLevel(3)
-//                            .harvestTool(ToolType.PICKAXE).setRequiresTool()));
+
+//    public static final RegistryObject<Block> PLAGUED_SIGN = BLOCKS.register("PLAGUED_sign",
+//            () -> new ModStandingSignBlock(AbstractBlock.Properties.create(Material.IRON), ModWoodTypes.PLAGUED));
 //
-//    public static final RegistryObject<Block> AMETHYST_FENCE = registerBlock("amethyst_fence",
-//            () -> new FenceBlock(AbstractBlock.Properties.create(Material.IRON)
-//                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
-//                    .setRequiresTool().hardnessAndResistance(5f)));
-//
-//    public static final RegistryObject<Block> AMETHYST_FENCE_GATE = registerBlock("amethyst_fence_gate",
-//            () -> new FenceGateBlock(AbstractBlock.Properties.create(Material.IRON)
-//                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
-//                    .setRequiresTool().hardnessAndResistance(5f)));
-//
-//    public static final RegistryObject<Block> AMETHYST_SLAB = registerBlock("amethyst_slab",
-//            () -> new SlabBlock(AbstractBlock.Properties.create(Material.IRON)
-//                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
-//                    .setRequiresTool().hardnessAndResistance(5f)));
-//
-//    public static final RegistryObject<Block> AMETHYST_BUTTON = registerBlock("amethyst_button",
-//            () -> new StoneButtonBlock(AbstractBlock.Properties.create(Material.IRON)
-//                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
-//                    .setRequiresTool().hardnessAndResistance(5f)
-//                    .doesNotBlockMovement()));
-//
-//    public static final RegistryObject<Block> AMETHYST_PRESSURE_PLATE = registerBlock("amethyst_pressure_plate",
-//            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, AbstractBlock.Properties
-//                    .create(Material.IRON).harvestLevel(2).harvestTool(ToolType.PICKAXE)
-//                    .setRequiresTool().hardnessAndResistance(5f)));
-//
-//    public static final RegistryObject<Block> AMETHYST_DOOR = registerBlock("amethyst_door",
-//            () -> new DoorBlock( AbstractBlock.Properties.create(Material.IRON).harvestLevel(2)
-//                    .harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)
-//                    .notSolid()));
-//
-//    public static final RegistryObject<Block> AMETHYST_TRAPDOOR = registerBlock("amethyst_trapdoor",
-//            () -> new TrapDoorBlock(AbstractBlock.Properties.create(Material.IRON).harvestLevel(2)
-//                    .harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)
-//                    .notSolid()));
-//    public static final RegistryObject<Block> REDWOOD_SIGN = BLOCKS.register("redwood_sign",
-//            () -> new ModStandingSignBlock(AbstractBlock.Properties.create(Material.IRON), ModWoodTypes.REDWOOD));
-//
-//    public static final RegistryObject<Block> REDWOOD_WALL_SIGN = BLOCKS.register("redwood_wall_sign",
-//            () -> new ModWallSignBlock(AbstractBlock.Properties.create(Material.IRON), ModWoodTypes.REDWOOD));
+//    public static final RegistryObject<Block> PLAGUED_WALL_SIGN = BLOCKS.register("PLAGUED_wall_sign",
+//            () -> new ModWallSignBlock(AbstractBlock.Properties.create(Material.IRON), ModWoodTypes.PLAGUED));
     
     //end Reference Entries
     

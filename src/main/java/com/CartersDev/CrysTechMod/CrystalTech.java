@@ -1,6 +1,7 @@
 package com.CartersDev.CrysTechMod;
 
 import com.CartersDev.CrysTechMod.block.ModBlocks;
+import com.CartersDev.CrysTechMod.block.ModWoodTypes;
 import com.CartersDev.CrysTechMod.container.ModContainers;
 import com.CartersDev.CrysTechMod.data.recipes.ModRecipeTypes;
 import com.CartersDev.CrysTechMod.fluid.ModFluids;
@@ -72,15 +73,13 @@ public class CrystalTech
     private void setup(final FMLCommonSetupEvent event)
     {
         event.enqueueWork(() -> {
-//            AxeItem.BLOCK_STRIPPING_MAP = new ImmutableMap.Builder<Block, Block>().putAll(AxeItem.BLOCK_STRIPPING_MAP)
-//                    .put(ModBlocks.REDWOOD_LOG.get(), ModBlocks.STRIPPED_REDWOOD_LOG.get())
-//                    .put(ModBlocks.REDWOOD_WOOD.get(), ModBlocks.STRIPPED_REDWOOD_WOOD.get())
-//                    .put(ModBlocks.GLOWWOOD_LOG.get(), ModBlocks.STRIPPED_GLOWWOOD_LOG.get())
-//                    .put(ModBlocks.GLOWWOOD_WOOD.get(), ModBlocks.STRIPPED_GLOWWOOD_WOOD.get()).build();
+            AxeItem.BLOCK_STRIPPING_MAP = new ImmutableMap.Builder<Block, Block>().putAll(AxeItem.BLOCK_STRIPPING_MAP)
+                    .put(ModBlocks.PLAGUED_LOG.get(), ModBlocks.STRIPPED_PLAGUED_LOG.get())
+                    .put(ModBlocks.PLAGUED_WOOD.get(), ModBlocks.STRIPPED_PLAGUED_WOOD.get()).build();
 
             // Add to the setup method inside the enqueueWork
             ModStructures.setupStructures();
-//            WoodType.register(ModWoodTypes.REDWOOD);
+            WoodType.register(ModWoodTypes.PLAGUED);
         });
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
@@ -90,8 +89,8 @@ public class CrystalTech
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
         event.enqueueWork(() -> {
-//            RenderTypeLookup.setRenderLayer(ModBlocks.AMETHYST_DOOR.get(), RenderType.getCutout());
-//            RenderTypeLookup.setRenderLayer(ModBlocks.AMETHYST_TRAPDOOR.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.PLAGUED_DOOR.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.PLAGUED_TRAPDOOR.get(), RenderType.getCutout());
 
             RenderTypeLookup.setRenderLayer(ModBlocks.GREEN_TIBERIUM_CROP.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.BLUE_TIBERIUM_CROP.get(), RenderType.getCutout());
@@ -108,11 +107,13 @@ public class CrystalTech
 //            ClientRegistry.bindTileEntityRenderer(ModTileEntities.SIGN_TILE_ENTITIES.get(),
 //                    SignTileEntityRenderer::new);
 
-//            Atlases.addWoodType(ModWoodTypes.REDWOOD);
+            Atlases.addWoodType(ModWoodTypes.PLAGUED);
 
             RenderTypeLookup.setRenderLayer(ModFluids.TIBERIUM_FLUID.get(), RenderType.getTranslucent());
             RenderTypeLookup.setRenderLayer(ModFluids.LIQUID_TIBERIUM_BLOCK.get(), RenderType.getTranslucent());
             RenderTypeLookup.setRenderLayer(ModFluids.TIBERIUM_FLOWING.get(), RenderType.getTranslucent());
+
+
 
         });
     }

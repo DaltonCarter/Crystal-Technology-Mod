@@ -7,13 +7,13 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:stick"
+      "item": "crystechmod:plagued_stick"
     },
     "X": {
-      "item": "glowingtree:amethyst"
+      "item": "crystechmod:plagued_planks"
     }
   },
   "result": {
-    "item": "glowingtree:amethyst_sword"
+    "item": "crystechmod:plagued_sword"
   }
 }

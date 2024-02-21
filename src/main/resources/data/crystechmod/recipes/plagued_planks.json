@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "crystechmod:plagued_log"
+    }
+  ],
+  "result": {
+    "item": "crystechmod:plagued_planks",
+    "count": 4
+  }
+}
