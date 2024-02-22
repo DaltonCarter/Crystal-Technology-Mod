@@ -1,6 +1,7 @@
 package com.CartersDev.CrysTechMod.block.custom;
 
 import com.CartersDev.CrysTechMod.block.ModBlocks;
+import com.CartersDev.CrysTechMod.util.CrysTechTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -30,6 +31,8 @@ public class TiberiumSoil extends Block {
             }
 
             //Soil Spread logic
+//            private boolean blockIsValidForSpread(BlockState clickedBlock) {
+//                return clickedBlock.isIn(CrysTechTags.Blocks.TIBERIUM_PROOF_BLOCKS);
         }
     }
 
