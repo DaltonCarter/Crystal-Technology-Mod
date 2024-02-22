@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "crystechmod:black_tibercrete",
+    "crystechmod:blue_tibercrete",
+    "crystechmod:brown_tibercrete",
+    "crystechmod:cyan_tibercrete",
+    "crystechmod:gray_tibercrete",
+    "crystechmod:green_tibercrete",
+    "crystechmod:light_blue_tibercrete",
+    "crystechmod:light_gray_tibercrete",
+    "crystechmod:magenta_tibercrete",
+    "crystechmod:orange_tibercrete",
+    "crystechmod:pink_tibercrete",
+    "crystechmod:purple_tibercrete",
+    "crystechmod:red_tibercrete",
+    "crystechmod:lime_tibercrete",
+    "crystechmod:white_tibercrete",
+    "crystechmod:yellow_tibercrete"
+  ]
+}

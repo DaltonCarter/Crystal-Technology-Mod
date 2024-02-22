@@ -15,6 +15,9 @@ public class CrysTechTags {
         public static final Tags.IOptionalNamedTag<Block> FIRESTONE_CLICKABLE_BLOCKS =
                 createTag("firestone_clickable_blocks");
 
+        public static final Tags.IOptionalNamedTag<Block> TIBERIUM_PROOF_BLOCKS =
+                createTag("tiberium_proof_blocks");
+
         private static Tags.IOptionalNamedTag<Block> createTag(String name) {
             return BlockTags.createOptional(new ResourceLocation(CrystalTech.MOD_ID, name));
         }

@@ -40,6 +40,24 @@
   "block.crystechmod.plagued_pressure_plate": "Plagued Pressure Plate",
   "block.crystechmod.plagued_door": "Plagued Door",
   "block.crystechmod.plagued_trapdoor": "Plagued Trapdoor",
+  "block.crystechmod.black_tibercrete": "Black Tibercrete",
+  "block.crystechmod.blue_tibercrete": "Blue Tibercrete",
+  "block.crystechmod.brown_tibercrete": "Brown Tibercrete",
+  "block.crystechmod.cyan_tibercrete": "Cyan Tibercrete",
+  "block.crystechmod.green_tibercrete": "Green Tibercrete",
+  "block.crystechmod.lime_tibercrete": "Lime Tibercrete",
+  "block.crystechmod.light_blue_tibercrete": "Light Blue Tibercrete",
+  "block.crystechmod.light_gray_tibercrete": "Light Gray Tibercrete",
+  "block.crystechmod.magenta_tibercrete": "Magenta Tibercrete",
+  "block.crystechmod.orange_tibercrete": "Orange Tibercrete",
+  "block.crystechmod.pink_tibercrete": "Pink Tibercrete",
+  "block.crystechmod.purple_tibercrete": "Purple Tibercrete",
+  "block.crystechmod.red_tibercrete": "Red Tibercrete",
+  "block.crystechmod.gray_tibercrete": "Gray Tibercrete",
+  "block.crystechmod.white_tibercrete": "White Tibercrete",
+  "block.crystechmod.yellow_tibercrete": "Yellow Tibercrete",
+
+
 
 
   "fluid.crystechmod.tiberium_fluid": "Liquid Riparius Tiberium",
