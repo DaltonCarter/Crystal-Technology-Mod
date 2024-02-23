@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "crystechmod:kryon_crystal"
+    }
+  },
+  "result": {
+    "item": "crystechmod:kryon_block"
+  }
+}

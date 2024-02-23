@@ -41,7 +41,32 @@ public class ModBlocks {
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
 
-    public static final RegistryObject<Block> YOKARITE_BLOCK = registerBlock("yokarite_block",
+    public static final RegistryObject<Block> AERIES_BLOCK = registerBlock("aeries_block",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> ILLUMINA_BLOCK = registerBlock("illumina_block",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> ENIGMA_BLOCK = registerBlock("enigma_block",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> KRYON_BLOCK = registerBlock("kryon_block",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> GUNDANIUM_BLOCK = registerBlock("gundanium_block",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> ALYTHUM_BLOCK = registerBlock("alythum_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
@@ -412,14 +437,39 @@ public class ModBlocks {
     //end Deco Blocks
 
     //Ores:
-    public static final RegistryObject<Block> YOKARITE_ORE = registerBlock("yokarite_ore",
+    public static final RegistryObject<Block> AERIES_ORE = registerBlock("aeries_ore",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> ILLUMINA_ORE = registerBlock("illumina_ore",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> KRYON_ORE = registerBlock("kryon_ore",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> ENIGMA_ORE = registerBlock("enigma_ore",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(4).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> GUNDANIUM_ORE = registerBlock("gundanium_ore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
 
-    public static final RegistryObject<Block> TIBERIUM_ORE = registerBlock("tiberium_ore",
+    public static final RegistryObject<Block> ALYTHUM_ORE = registerBlock("alythum_ore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(4).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> QUALRITE_ORE = registerBlock("qualrite_ore",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(4).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
     //End Ores
 

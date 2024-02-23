@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "crystechmod:aeries_block"
+    }
+  ],
+  "result": {
+    "item": "crystechmod:aeries_crystal",
+    "count": 9
+  }
+}

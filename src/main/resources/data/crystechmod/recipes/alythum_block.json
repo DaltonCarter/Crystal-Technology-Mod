@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "crystechmod:alythum_ingot"
+    }
+  },
+  "result": {
+    "item": "crystechmod:alythum_block"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "crystechmod:kryon_block"
+    }
+  ],
+  "result": {
+    "item": "crystechmod:kryon_crystal",
+    "count": 9
+  }
+}

@@ -22,7 +22,34 @@ public class ModItems {
     public static final RegistryObject<Item> FIRESTONE = ITEMS.register("firestone",
             () -> new Firestone(new Item.Properties().setNoRepair().group(ModItemGroup.CRYS_TECH).maxDamage(8)));
 
-    public static final RegistryObject<Item> YOKARITE = ITEMS.register("yokarite",
+    public static final RegistryObject<Item> AERIES_CRYSTAL = ITEMS.register("aeries_crystal",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> ILLUMINA_CRYSTAL = ITEMS.register("illumina_crystal",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> KRYON_CRYSTAL = ITEMS.register("kryon_crystal",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> ENIGMA_CRYSTAL = ITEMS.register("enigma_crystal",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> RAW_QUALRITE = ITEMS.register("raw_qualrite",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> QUALRIM_COMPOUND = ITEMS.register("qualrim_compound",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> GUNDANIUM_DUST = ITEMS.register("gundanium_dust",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> GUNDANIUM_INGOT = ITEMS.register("gundanium_ingot",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> ALYTHUM_DUST = ITEMS.register("alythum_dust",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> ALYTHUM_INGOT = ITEMS.register("alythum_ingot",
             () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
 
     public static final RegistryObject<Item> TIBERIUM = ITEMS.register("tiberium",

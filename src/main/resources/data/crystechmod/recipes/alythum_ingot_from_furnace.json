@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "crystechmod:alythum_ore"
+  },
+  "result": "crystechmod:alythum_ingot",
+  "experience": 0.7,
+  "cookingtime": 400
+}

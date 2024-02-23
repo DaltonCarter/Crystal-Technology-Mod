@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "crystechmod:illumina_block"
+    }
+  ],
+  "result": {
+    "item": "crystechmod:illumina_crystal",
+    "count": 9
+  }
+}

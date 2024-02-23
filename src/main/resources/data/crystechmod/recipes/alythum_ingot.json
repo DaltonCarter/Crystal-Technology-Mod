@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "crystechmod:alythum_block"
+    }
+  ],
+  "result": {
+    "item": "crystechmod:alythum_ingot",
+    "count": 9
+  }
+}
