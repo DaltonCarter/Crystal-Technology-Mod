@@ -71,6 +71,26 @@ public class ModBlocks {
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
 
+    public static final RegistryObject<Block> ILLYRIM_BLOCK = registerBlock("illyrim_block",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> LG_CORE_BLOCK = registerBlock("lg_core_block",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> MG_CORE_BLOCK = registerBlock("mg_core_block",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> HG_CORE_BLOCK = registerBlock("hg_core_block",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
     public static final RegistryObject<Block> TIBERIUM_BLOCK = registerBlock("tiberium_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(3).harvestTool(ToolType.PICKAXE)

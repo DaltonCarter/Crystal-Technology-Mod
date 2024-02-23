@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "crystechmod:hg_core_blend"
+  },
+  "result": "crystechmod:hg_core_ingot",
+  "experience": 0.7,
+  "cookingtime": 300
+}

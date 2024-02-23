@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "crystechmod:lg_core_blend"
+  },
+  "result": "crystechmod:lg_core_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

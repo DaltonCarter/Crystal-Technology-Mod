@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "crystechmod:illyrim_block"
+    }
+  ],
+  "result": {
+    "item": "crystechmod:illyrim_ingot",
+    "count": 9
+  }
+}

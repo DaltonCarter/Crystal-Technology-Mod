@@ -52,6 +52,30 @@ public class ModItems {
     public static final RegistryObject<Item> ALYTHUM_INGOT = ITEMS.register("alythum_ingot",
             () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
 
+    public static final RegistryObject<Item> ILLYRIM_BLEND = ITEMS.register("illyrim_blend",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> ILLYRIM_INGOT = ITEMS.register("illyrim_ingot",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> LG_CORE_BLEND = ITEMS.register("lg_core_blend",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> LG_CORE_INGOT = ITEMS.register("lg_core_ingot",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> MG_CORE_BLEND = ITEMS.register("mg_core_blend",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> MG_CORE_INGOT = ITEMS.register("mg_core_ingot",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> HG_CORE_BLEND = ITEMS.register("hg_core_blend",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> HG_CORE_INGOT = ITEMS.register("hg_core_ingot",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
     public static final RegistryObject<Item> TIBERIUM = ITEMS.register("tiberium",
             () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
 
