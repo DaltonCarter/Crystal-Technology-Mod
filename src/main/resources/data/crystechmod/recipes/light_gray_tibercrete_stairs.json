@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "crystechmod:light_gray_tibercrete"
+    }
+  },
+  "result": {
+    "item": "crystechmod:light_gray_tibercrete_stairs",
+    "count": 4
+  }
+}

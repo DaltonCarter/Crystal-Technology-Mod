@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "crystechmod:gray_tibercrete_powder"
+    },
+    "#": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "item": "crystechmod:gray_tibercrete"
+  }
+}

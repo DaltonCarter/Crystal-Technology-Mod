@@ -3,7 +3,7 @@
   "group": "concrete_powder",
   "ingredients": [
     {
-      "item": "minecraft:white_dye"
+      "item": "minecraft:cyan_dye"
     },
     {
       "item": "minecraft:sand"
@@ -21,17 +21,17 @@
       "item": "crystechmod:green_tiberium_dust"
     },
     {
-      "item": "crystechmod:"
+      "item": "crystechmod:green_tiberium_dust"
     },
     {
-      "item": "crystechmod:"
+      "item": "crystechmod:green_tiberium_dust"
     },
     {
-      "item": "crystechmod:"
+      "item": "crystechmod:green_tiberium_dust"
     }
   ],
   "result": {
-    "item": "crystechmod:white_tibercrete_powder",
+    "item": "crystechmod:cyan_tibercrete_powder",
     "count": 8
   }
 }

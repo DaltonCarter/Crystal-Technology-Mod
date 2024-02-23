@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "concrete_powder",
+  "ingredients": [
+    {
+      "item": "minecraft:gray_dye"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:gravel"
+    },
+    {
+      "item": "minecraft:gravel"
+    },
+    {
+      "item": "crystechmod:green_tiberium_dust"
+    },
+    {
+      "item": "crystechmod:green_tiberium_dust"
+    },
+    {
+      "item": "crystechmod:green_tiberium_dust"
+    },
+    {
+      "item": "crystechmod:green_tiberium_dust"
+    }
+  ],
+  "result": {
+    "item": "crystechmod:gray_tibercrete_powder",
+    "count": 8
+  }
+}
