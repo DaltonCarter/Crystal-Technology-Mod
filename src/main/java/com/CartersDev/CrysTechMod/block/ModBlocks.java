@@ -332,7 +332,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> BLACK_TIBERCRETE_STAIRS = registerBlock("black_tibercrete_stairs",
             () -> new StairsBlock(() -> BLACK_TIBERCRETE.get().getDefaultState(),
                     AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2)
-                            .harvestTool(ToolType.PICKAXE).setRequiresTool()));
+                            .harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> BLUE_TIBERCRETE_STAIRS = registerBlock("blue_tibercrete_stairs",
             () -> new StairsBlock(() -> BLUE_TIBERCRETE.get().getDefaultState(),
@@ -342,27 +342,27 @@ public class ModBlocks {
     public static final RegistryObject<Block> BROWN_TIBERCRETE_STAIRS = registerBlock("brown_tibercrete_stairs",
             () -> new StairsBlock(() -> BROWN_TIBERCRETE.get().getDefaultState(),
                     AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2)
-                            .harvestTool(ToolType.PICKAXE).setRequiresTool()));
+                            .harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> CYAN_TIBERCRETE_STAIRS = registerBlock("cyan_tibercrete_stairs",
             () -> new StairsBlock(() -> CYAN_TIBERCRETE.get().getDefaultState(),
                     AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2)
-                            .harvestTool(ToolType.PICKAXE).setRequiresTool()));
+                            .harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> GRAY_TIBERCRETE_STAIRS = registerBlock("gray_tibercrete_stairs",
             () -> new StairsBlock(() -> GRAY_TIBERCRETE.get().getDefaultState(),
                     AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2)
-                            .harvestTool(ToolType.PICKAXE).setRequiresTool()));
+                            .harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> GREEN_TIBERCRETE_STAIRS = registerBlock("green_tibercrete_stairs",
             () -> new StairsBlock(() -> GREEN_TIBERCRETE.get().getDefaultState(),
                     AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2)
-                            .harvestTool(ToolType.PICKAXE).setRequiresTool()));
+                            .harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> LIGHT_BLUE_TIBERCRETE_STAIRS = registerBlock("light_blue_tibercrete_stairs",
             () -> new StairsBlock(() -> LIGHT_BLUE_TIBERCRETE.get().getDefaultState(),
                     AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2)
-                            .harvestTool(ToolType.PICKAXE).setRequiresTool()));
+                            .harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> LIGHT_GRAY_TIBERCRETE_STAIRS = registerBlock("light_gray_tibercrete_stairs",
             () -> new StairsBlock(() -> LIGHT_GRAY_TIBERCRETE.get().getDefaultState(),
@@ -372,42 +372,42 @@ public class ModBlocks {
     public static final RegistryObject<Block> LIME_TIBERCRETE_STAIRS = registerBlock("lime_tibercrete_stairs",
             () -> new StairsBlock(() -> LIME_TIBERCRETE.get().getDefaultState(),
                     AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2)
-                            .harvestTool(ToolType.PICKAXE).setRequiresTool()));
+                            .harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> MAGENTA_TIBERCRETE_STAIRS = registerBlock("magenta_tibercrete_stairs",
             () -> new StairsBlock(() -> MAGENTA_TIBERCRETE.get().getDefaultState(),
                     AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2)
-                            .harvestTool(ToolType.PICKAXE).setRequiresTool()));
+                            .harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> ORANGE_TIBERCRETE_STAIRS = registerBlock("orange_tibercrete_stairs",
             () -> new StairsBlock(() -> ORANGE_TIBERCRETE.get().getDefaultState(),
                     AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2)
-                            .harvestTool(ToolType.PICKAXE).setRequiresTool()));
+                            .harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> PINK_TIBERCRETE_STAIRS = registerBlock("pink_tibercrete_stairs",
             () -> new StairsBlock(() -> PINK_TIBERCRETE.get().getDefaultState(),
                     AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2)
-                            .harvestTool(ToolType.PICKAXE).setRequiresTool()));
+                            .harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> PURPLE_TIBERCRETE_STAIRS = registerBlock("purple_tibercrete_stairs",
             () -> new StairsBlock(() -> PURPLE_TIBERCRETE.get().getDefaultState(),
                     AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2)
-                            .harvestTool(ToolType.PICKAXE).setRequiresTool()));
+                            .harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> RED_TIBERCRETE_STAIRS = registerBlock("red_tibercrete_stairs",
             () -> new StairsBlock(() -> RED_TIBERCRETE.get().getDefaultState(),
                     AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2)
-                            .harvestTool(ToolType.PICKAXE).setRequiresTool()));
+                            .harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> WHITE_TIBERCRETE_STAIRS = registerBlock("white_tibercrete_stairs",
             () -> new StairsBlock(() -> WHITE_TIBERCRETE.get().getDefaultState(),
                     AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2)
-                            .harvestTool(ToolType.PICKAXE).setRequiresTool()));
+                            .harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> YELLOW_TIBERCRETE_STAIRS = registerBlock("yellow_tibercrete_stairs",
             () -> new StairsBlock(() -> YELLOW_TIBERCRETE.get().getDefaultState(),
                     AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2)
-                            .harvestTool(ToolType.PICKAXE).setRequiresTool()));
+                            .harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
     //end Deco Blocks
 
