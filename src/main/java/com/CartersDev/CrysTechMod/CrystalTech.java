@@ -95,7 +95,7 @@ public class CrystalTech
             RenderTypeLookup.setRenderLayer(ModBlocks.GREEN_TIBERIUM_CROP.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.BLUE_TIBERIUM_CROP.get(), RenderType.getCutout());
 
-//            RenderTypeLookup.setRenderLayer(ModBlocks.REDWOOD_LEAVES.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.PLAGUED_LEAVES.get(), RenderType.getCutout());
 //            RenderTypeLookup.setRenderLayer(ModBlocks.REDWOOD_SAPLING.get(), RenderType.getCutout());
 
             RenderTypeLookup.setRenderLayer(ModBlocks.HYACINTH.get(), RenderType.getCutout());

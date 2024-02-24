@@ -169,6 +169,22 @@ public class ModBlocks {
                     return 5;
                 }
             });
+
+    public static final RegistryObject<Block> PLAGUED_LEAVES = registerBlock("plagued_leaves",
+            () -> new PlaguedLeaves((AbstractBlock.Properties.create(Material.LEAVES)
+                    .hardnessAndResistance(0.2f).tickRandomly().sound(SoundType.PLANT)
+                    .notSolid().setLightLevel(tiberiumglow)))
+            {
+                @Override
+                public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+                    return 5;
+                }
+            });
     //End Wood
 
     //Deco Blocks:
