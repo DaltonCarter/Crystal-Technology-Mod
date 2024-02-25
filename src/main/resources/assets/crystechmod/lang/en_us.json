@@ -30,8 +30,14 @@
   "item.crystechmod.plagued_sword": "Plagued Sword",
   "item.crystechmod.plagued_hoe": "Plagued Hoe",
   "item.crystechmod.plagued_shovel": "Plagued Shovel",
-
-
+  "item.crystechmod.core_steel_sign": "Core Steel Sign",
+  "item.crystechmod.gundanium_helmet": "Gundanium Helmet",
+  "item.crystechmod.gundanium_chestplate": "Gundanium Chestplate",
+  "item.crystechmod.gundanium_leggings": "Gundanium Leggings",
+  "item.crystechmod.gundanium_boots": "Gundanium Boots",
+  "item.crystechmod.gundanium_horse_armor": "Gundanium Horse Armor",
+  
+  
   "block.crystechmod.aeries_ore": "Aeries Ore",
   "block.crystechmod.illumina_ore": "Illumina Ore",
   "block.crystechmod.enigma_ore": "Enigma Ore",
@@ -120,6 +126,8 @@
   "block.crystechmod.white_tibercrete_stairs": "White Tibercrete Stairs",
   "block.crystechmod.yellow_tibercrete_stairs": "Yellow Tibercrete Stairs",
   "block.crystechmod.plagued_leaves": "Plagued Leaves",
+  "block.crystechmod.core_steel_sign": "core_steel Sign",
+  "block.crystechmod.core_steel_wall_sign": "core_steel Wall Sign",
 
 
 

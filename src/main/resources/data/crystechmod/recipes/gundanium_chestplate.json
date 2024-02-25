@@ -1,15 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
+    "X X",
     "XXX",
-    "X X"
+    "XXX"
   ],
   "key": {
     "X": {
-      "item": "glowingtree:amethyst"
+      "item": "crystechmod:gundanium_ingot"
     }
   },
   "result": {
-    "item": "glowingtree:amethyst_helmet"
+    "item": "crystechmod:gundanium_chestplate"
   }
 }

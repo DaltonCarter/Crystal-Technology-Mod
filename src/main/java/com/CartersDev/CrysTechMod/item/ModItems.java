@@ -132,33 +132,30 @@ public class ModItems {
             () -> new HoeItem(ModitemTier.PLAGUED, 0, 0f,
                     new Item.Properties().group(ModItemGroup.CRYS_TECH)));
 
+    public static final RegistryObject<Item> CORE_STEEL_SIGN = ITEMS.register("core_steel_sign",
+            () -> new SignItem(new Item.Properties().maxStackSize(16).group(ModItemGroup.CRYS_TECH),
+                    ModBlocks.CORE_STEEL_SIGN.get(), ModBlocks.CORE_STEEL_WALL_SIGN.get()));
 
-    //Reference Items
+    public static final RegistryObject<Item> GUNDANIUM_HELMET = ITEMS.register("gundanium_helmet",
+            () -> new ArmorItem(ModArmorMaterial.GUNDANIUM, EquipmentSlotType.HEAD,
+                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
 
-//    public static final RegistryObject<Item> AMETHYST_HELMET = ITEMS.register("amethyst_helmet",
-//            () -> new ArmorItem(ModArmorMaterial.AMETHYST, EquipmentSlotType.HEAD,
-//                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
-//
-//    public static final RegistryObject<Item> AMETHYST_CHESTPLATE = ITEMS.register("amethyst_chestplate",
-//            () -> new ArmorItem(ModArmorMaterial.AMETHYST, EquipmentSlotType.CHEST,
-//                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
-//
-//    public static final RegistryObject<Item> AMETHYST_LEGGINGS = ITEMS.register("amethyst_leggings",
-//            () -> new ArmorItem(ModArmorMaterial.AMETHYST, EquipmentSlotType.LEGS,
-//                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
-//
-//    public static final RegistryObject<Item> AMETHYST_BOOTS = ITEMS.register("amethyst_boots",
-//            () -> new ArmorItem(ModArmorMaterial.AMETHYST, EquipmentSlotType.FEET,
-//                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
-//
-//    public static final RegistryObject<Item> AMETHYST_HORSE_ARMOR = ITEMS.register("amethyst_horse_armor",
-//            () -> new HorseArmorItem(9, "amethyst",
-//                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
-//
-//    public static final RegistryObject<Item> REDWOOD_SIGN = ITEMS.register("redwood_sign",
-//            () -> new SignItem(new Item.Properties().maxStackSize(16).group(ModItemGroup.CRYS_TECH),
-//                    ModBlocks.REDWOOD_SIGN.get(), ModBlocks.REDWOOD_WALL_SIGN.get()));
-    //End Reference Items
+    public static final RegistryObject<Item> GUNDANIUM_CHESTPLATE = ITEMS.register("gundanium_chestplate",
+            () -> new ArmorItem(ModArmorMaterial.GUNDANIUM, EquipmentSlotType.CHEST,
+                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> GUNDANIUM_LEGGINGS = ITEMS.register("gundanium_leggings",
+            () -> new ArmorItem(ModArmorMaterial.GUNDANIUM, EquipmentSlotType.LEGS,
+                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> GUNDANIUM_BOOTS = ITEMS.register("gundanium_boots",
+            () -> new ArmorItem(ModArmorMaterial.GUNDANIUM, EquipmentSlotType.FEET,
+                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> GUNDANIUM_HORSE_ARMOR = ITEMS.register("gundanium_horse_armor",
+            () -> new HorseArmorItem(9, "gundanium",
+                    new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
 
 
     public static void register(IEventBus eventBus) {

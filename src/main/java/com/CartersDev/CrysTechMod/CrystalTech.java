@@ -104,8 +104,8 @@ public class CrystalTech
             ScreenManager.registerFactory(ModContainers.LIGHTNING_CHANNELER_CONTAINER.get(),
                     LightningChannelerScreen::new);
 
-//            ClientRegistry.bindTileEntityRenderer(ModTileEntities.SIGN_TILE_ENTITIES.get(),
-//                    SignTileEntityRenderer::new);
+            ClientRegistry.bindTileEntityRenderer(ModTileEntities.SIGN_TILE_ENTITIES.get(),
+                    SignTileEntityRenderer::new);
 
             Atlases.addWoodType(ModWoodTypes.PLAGUED);
 

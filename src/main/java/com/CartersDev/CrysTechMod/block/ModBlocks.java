@@ -537,20 +537,14 @@ public class ModBlocks {
     
     public static final RegistryObject<Block> LIGHTNING_CHANNELER = registerBlock("lightning_channeler",
             () -> new LightningChannelerBlock(AbstractBlock.Properties.create(Material.IRON)));
+
+    public static final RegistryObject<Block> CORE_STEEL_SIGN = BLOCKS.register("core_steel_sign",
+            () -> new ModStandingSignBlock(AbstractBlock.Properties.create(Material.IRON), ModWoodTypes.PLAGUED));
+
+    public static final RegistryObject<Block> CORE_STEEL_WALL_SIGN = BLOCKS.register("core_steel_wall_sign",
+            () -> new ModWallSignBlock(AbstractBlock.Properties.create(Material.IRON), ModWoodTypes.PLAGUED));
     //End Tile Entities and Machines
 
-
-
-
-    //Reference Entries
-
-//    public static final RegistryObject<Block> PLAGUED_SIGN = BLOCKS.register("PLAGUED_sign",
-//            () -> new ModStandingSignBlock(AbstractBlock.Properties.create(Material.IRON), ModWoodTypes.PLAGUED));
-//
-//    public static final RegistryObject<Block> PLAGUED_WALL_SIGN = BLOCKS.register("PLAGUED_wall_sign",
-//            () -> new ModWallSignBlock(AbstractBlock.Properties.create(Material.IRON), ModWoodTypes.PLAGUED));
-    
-    //end Reference Entries
     
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
 

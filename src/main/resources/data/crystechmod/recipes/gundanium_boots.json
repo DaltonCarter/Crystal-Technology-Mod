@@ -6,10 +6,10 @@
   ],
   "key": {
     "X": {
-      "item": "glowingtree:amethyst"
+      "item": "crystechmod:gundanium_ingot"
     }
   },
   "result": {
-    "item": "glowingtree:amethyst_boots"
+    "item": "crystechmod:gundanium_boots"
   }
 }

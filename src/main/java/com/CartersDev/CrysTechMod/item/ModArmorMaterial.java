@@ -14,9 +14,9 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements IArmorMaterial {
-    AMETHYST("amethyst", 7, new int[] { 2, 5, 6, 2 }, 12,
-            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f,0.0f, () -> {
-        return Ingredient.fromItems(ModItems.TIBERIUM.get());
+    GUNDANIUM("gundanium", 20, new int[] { 3, 6, 6, 3 }, 12,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f,0.5f, () -> {
+        return Ingredient.fromItems(ModItems.GUNDANIUM_INGOT.get());
     });
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};

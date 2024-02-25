@@ -7,18 +7,20 @@ import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.foliageplacer.BlobFoliagePlacer;
+import net.minecraft.world.gen.trunkplacer.FancyTrunkPlacer;
 import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
 
 public class ModConfiguredFeatures {
 
-//    public static final ConfiguredFeature<BaseTreeFeatureConfig, ?> REDWOOD =
-//            register("redwood", Feature.TREE.withConfiguration((
-//                    new BaseTreeFeatureConfig.Builder(
-//                            new SimpleBlockStateProvider(ModBlocks.REDWOOD_LOG.get().getDefaultState()),
-//                            new SimpleBlockStateProvider(ModBlocks.REDWOOD_LEAVES.get().getDefaultState()),
-//                            new BlobFoliagePlacer(FeatureSpread.create(2), FeatureSpread.create(0), 3),
+    public static final ConfiguredFeature<BaseTreeFeatureConfig, ?> PLAGUED =
+            register("plagued", Feature.TREE.withConfiguration((
+                    new BaseTreeFeatureConfig.Builder(
+                            new SimpleBlockStateProvider(ModBlocks.PLAGUED_LOG.get().getDefaultState()),
+                            new SimpleBlockStateProvider(ModBlocks.PLAGUED_LEAVES.get().getDefaultState()),
+                            new BlobFoliagePlacer(FeatureSpread.create(2), FeatureSpread.create(0), 3),
 //                            new StraightTrunkPlacer(6, 4, 3),
-//                            new TwoLayerFeature(1, 0, 1))).setIgnoreVines().build()));
+                            new FancyTrunkPlacer(6, 4, 3),
+                            new TwoLayerFeature(1, 0, 1))).setIgnoreVines().build()));
 
 
     public static final ConfiguredFeature<?, ?> HYACINTH_CONFIG =  Feature.FLOWER.withConfiguration((
