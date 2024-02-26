@@ -31,13 +31,13 @@ public class IchorSoil extends Block {
                 if(number >10 && number < 15 ){
                     System.out.println("A patch of Vinifera Tiberium has sprouted!.");
                     worldIn.setBlockState(abovePos, ModBlocks.BLUE_TIBERIUM_CROP.get().getDefaultState());
-//                }else if (number > 14 && number < 18) {
-//                    System.out.println("A patch of Cruentus Tiberium has sprouted!.");
-//                    worldIn.setBlockState(abovePos, ModBlocks.RED_TIBERIUM_CROP.get().getDefaultState());
-//                }else if (number > 17 && number <= 20) {
-//                    System.out.println("A patch of Aboreus Tiberium has sprouted!.");
-//                    worldIn.setBlockState(abovePos, ModBlocks.PURPLE_TIBERIUM_CROP.get().getDefaultState());
-//                }else {
+                }else if (number > 14 && number < 18) {
+                    System.out.println("A patch of Cruentus Tiberium has sprouted!.");
+                    worldIn.setBlockState(abovePos, ModBlocks.RED_TIBERIUM_CROP.get().getDefaultState());
+                }else if (number > 17 && number <= 20) {
+                    System.out.println("A patch of Aboreus Tiberium has sprouted!.");
+                    worldIn.setBlockState(abovePos, ModBlocks.PURPLE_TIBERIUM_CROP.get().getDefaultState());
+                }else {
                     System.out.println("A patch of Riparius Tiberium has sprouted!.");
                     worldIn.setBlockState(abovePos, ModBlocks.GREEN_TIBERIUM_CROP.get().getDefaultState());
                 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "crystechmod:block/purple_tiberium_crop_stage0"
+  }
+}

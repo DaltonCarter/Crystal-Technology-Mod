@@ -1,5 +1,6 @@
 package com.CartersDev.CrysTechMod.block.custom;
 
+import com.CartersDev.CrysTechMod.block.ModBlocks;
 import com.CartersDev.CrysTechMod.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -28,6 +29,7 @@ public class BlueTiberiumCrystalBlock extends CropsBlock {
         this.setDefaultState(this.getStateContainer().getBaseState());
 
     }
+
 
     @Override
     protected IItemProvider getSeedsItem() {

@@ -36,8 +36,6 @@ public class TiberiumSoil extends Block {
                     System.out.println("A patch of Riparius Tiberium has sprouted!.");
                     worldIn.setBlockState(abovePos, ModBlocks.GREEN_TIBERIUM_CROP.get().getDefaultState());
                 }
-                //Chance to grow Blue Strain, Red Strain, and Purple Strain
-
 
             }
 
@@ -46,6 +44,7 @@ public class TiberiumSoil extends Block {
 //                return clickedBlock.isIn(CrysTechTags.Blocks.TIBERIUM_PROOF_BLOCKS);
         }
     }
+
 
 
     @Override

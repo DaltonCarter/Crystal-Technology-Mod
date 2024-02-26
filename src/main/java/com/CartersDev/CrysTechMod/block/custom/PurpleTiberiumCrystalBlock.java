@@ -4,16 +4,15 @@ import com.CartersDev.CrysTechMod.block.ModBlocks;
 import com.CartersDev.CrysTechMod.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.CropsBlock;
-import net.minecraft.entity.Entity;
 import net.minecraft.util.IItemProvider;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.world.World;
 
-public class GreenTiberiumCrystalBlock extends CropsBlock {
+public class PurpleTiberiumCrystalBlock extends CropsBlock {
 
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{
 
@@ -26,17 +25,21 @@ public class GreenTiberiumCrystalBlock extends CropsBlock {
             Block.makeCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 14.0D, 16.0D),
             Block.makeCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D)};
 
-    public GreenTiberiumCrystalBlock(Properties properties) {
+    public PurpleTiberiumCrystalBlock(Properties properties) {
         super(properties);
         this.setDefaultState(this.getStateContainer().getBaseState());
 
     }
 
+    @Override
+    protected boolean isValidGround(BlockState state, IBlockReader world, BlockPos pos) {
 
+        return state.matchesBlock(ModBlocks.ICHOR_SOIL.get());
+    }
 
     @Override
     protected IItemProvider getSeedsItem() {
-        return ModItems.GREEN_TIBERIUM_DUST.get();
+        return ModItems.PURPLE_TIBERIUM_DUST.get();
     }
 
     @Override
@@ -44,9 +47,4 @@ public class GreenTiberiumCrystalBlock extends CropsBlock {
         return SHAPE_BY_AGE[state.get(this.getAgeProperty())];
     }
 
-    @Override
-    public void onEntityWalk(World world, BlockPos pos, Entity entity) {
-        super.onEntityWalk(world, pos, entity);
-
-    }
 }

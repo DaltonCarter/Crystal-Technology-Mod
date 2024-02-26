@@ -36,6 +36,11 @@ public class ModBlocks {
                     .harvestLevel(3).harvestTool(ToolType.SHOVEL).tickRandomly()
                     .setRequiresTool().hardnessAndResistance(5f)));
 
+    public static final RegistryObject<Block> ICHOR_SOIL = registerBlock("ichor_soil",
+            () -> new IchorSoil(AbstractBlock.Properties.create(Material.EARTH)
+                    .harvestLevel(3).harvestTool(ToolType.SHOVEL).tickRandomly()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
     public static final RegistryObject<Block> FIRESTONE_BLOCK = registerBlock("firestone_block",
             () -> new FirestoneBlock(AbstractBlock.Properties.create(Material.IRON)
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE)
@@ -97,6 +102,16 @@ public class ModBlocks {
                     .setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> TIBERIUM_BLUE_BLOCK = registerBlock("tiberium_blue_block",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> TIBERIUM_RED_BLOCK = registerBlock("tiberium_red_block",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> TIBERIUM_PURPLE_BLOCK = registerBlock("tiberium_purple_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(3).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
@@ -527,6 +542,16 @@ public class ModBlocks {
                     .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)));
 
     public static final RegistryObject<Block> BLUE_TIBERIUM_CROP = BLOCKS.register("blue_tiberium_crop",
+            () -> new BlueTiberiumCrystalBlock(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(3).doesNotBlockMovement().harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)));
+
+    public static final RegistryObject<Block> RED_TIBERIUM_CROP = BLOCKS.register("red_tiberium_crop",
+            () -> new GreenTiberiumCrystalBlock(AbstractBlock.Properties.create(Material.IRON)
+                    .harvestLevel(3).doesNotBlockMovement().harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)));
+
+    public static final RegistryObject<Block> PURPLE_TIBERIUM_CROP = BLOCKS.register("purple_tiberium_crop",
             () -> new BlueTiberiumCrystalBlock(AbstractBlock.Properties.create(Material.IRON)
                     .harvestLevel(3).doesNotBlockMovement().harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)));

@@ -30,9 +30,14 @@ public class ModFluids {
 
     //for Tiberium
     public static final ResourceLocation RT_STILL_RL = new ResourceLocation(CrystalTech.MOD_ID, "block/liquid_tiberium_still");
-    public static final ResourceLocation RT_FLOWING_RL = new ResourceLocation(CrystalTech.MOD_ID, "block/liquid_tiberium_flowing");
+    public static final ResourceLocation RT_FLOWING_RL = new ResourceLocation(CrystalTech.MOD_ID, "block/liquid_tiberium_flow");
     public static final ResourceLocation VT_STILL_RL = new ResourceLocation(CrystalTech.MOD_ID, "block/vinifera_tiberium_still");
     public static final ResourceLocation VT_FLOWING_RL = new ResourceLocation(CrystalTech.MOD_ID,"block/vinifera_tiberium_flow");
+    public static final ResourceLocation CT_STILL_RL = new ResourceLocation(CrystalTech.MOD_ID, "block/liquid_red_tiberium_still");
+    public static final ResourceLocation CT_FLOWING_RL = new ResourceLocation(CrystalTech.MOD_ID, "block/liquid_red_tiberium_flow");
+    public static final ResourceLocation AT_STILL_RL = new ResourceLocation(CrystalTech.MOD_ID, "block/liquid_purple_tiberium_still");
+    public static final ResourceLocation AT_FLOWING_RL = new ResourceLocation(CrystalTech.MOD_ID, "block/liquid_purple_tiberium_flow");
+
     public static final ResourceLocation LAVA_OVERLAY_RL = new ResourceLocation("block/lava_overlay");
     //end of Tiberium
 
@@ -48,7 +53,7 @@ public static final RegistryObject<FlowingFluid> TIBERIUM_FLUID =
     public static final ForgeFlowingFluid.Properties LIQUID_TIBERIUM_PROPERTIES = new ForgeFlowingFluid.Properties(
             () -> TIBERIUM_FLUID.get(), () -> TIBERIUM_FLOWING.get(), FluidAttributes.builder(RT_STILL_RL, RT_FLOWING_RL)
             .density(15).luminosity(2).viscosity(5).sound(SoundEvents.ITEM_BUCKET_EMPTY_LAVA).overlay(LAVA_OVERLAY_RL)
-            ).slopeFindDistance(2).levelDecreasePerBlock(2)
+    ).slopeFindDistance(2).levelDecreasePerBlock(2)
             .block(() -> ModFluids.LIQUID_TIBERIUM_BLOCK.get()).bucket(() -> ModItems.TIBERIUM_BUCKET.get());
 
     public static final RegistryObject<FlowingFluidBlock> LIQUID_TIBERIUM_BLOCK = ModBlocks.BLOCKS.register("liquid_tiberium",
@@ -70,6 +75,38 @@ public static final RegistryObject<FlowingFluid> TIBERIUM_FLUID =
 
     public static final RegistryObject<FlowingFluidBlock> LIQUID_BLUE_TIBERIUM_BLOCK = ModBlocks.BLOCKS.register("liquid_blue_tiberium",
             () -> new FlowingFluidBlock(() -> ModFluids.BLUE_TIBERIUM_FLUID.get(), AbstractBlock.Properties.create(Material.LAVA)
+                    .doesNotBlockMovement().hardnessAndResistance(100f).noDrops().setLightLevel(liquid_tiberium)));
+
+    public static final RegistryObject<FlowingFluid> RED_TIBERIUM_FLUID =
+            FLUIDS.register("red_tiberium_fluid", () -> new ForgeFlowingFluid.Source(ModFluids.LIQUID_RED_TIBERIUM_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> RED_TIBERIUM_FLOWING =
+            FLUIDS.register("red_tiberium_flowing", () -> new ForgeFlowingFluid.Flowing(ModFluids.LIQUID_RED_TIBERIUM_PROPERTIES));
+
+    public static final ForgeFlowingFluid.Properties LIQUID_RED_TIBERIUM_PROPERTIES = new ForgeFlowingFluid.Properties(
+            () -> RED_TIBERIUM_FLUID.get(), () -> RED_TIBERIUM_FLOWING.get(), FluidAttributes.builder(CT_STILL_RL, CT_FLOWING_RL)
+            .density(15).luminosity(2).viscosity(5).sound(SoundEvents.ITEM_BUCKET_EMPTY_LAVA).overlay(LAVA_OVERLAY_RL)
+    ).slopeFindDistance(2).levelDecreasePerBlock(2)
+            .block(() -> ModFluids.LIQUID_RED_TIBERIUM_BLOCK.get()).bucket(() -> ModItems.RED_TIBERIUM_BUCKET.get());
+
+    public static final RegistryObject<FlowingFluidBlock> LIQUID_RED_TIBERIUM_BLOCK = ModBlocks.BLOCKS.register("liquid_red_tiberium",
+            () -> new FlowingFluidBlock(() -> ModFluids.RED_TIBERIUM_FLUID.get(), AbstractBlock.Properties.create(Material.LAVA)
+                    .doesNotBlockMovement().hardnessAndResistance(100f).noDrops().setLightLevel(liquid_tiberium)));
+
+    public static final RegistryObject<FlowingFluid> PURPLE_TIBERIUM_FLUID =
+            FLUIDS.register("purple_tiberium_fluid", () -> new ForgeFlowingFluid.Source(ModFluids.LIQUID_PURPLE_TIBERIUM_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> PURPLE_TIBERIUM_FLOWING =
+            FLUIDS.register("purple_tiberium_flowing", () -> new ForgeFlowingFluid.Flowing(ModFluids.LIQUID_PURPLE_TIBERIUM_PROPERTIES));
+
+    public static final ForgeFlowingFluid.Properties LIQUID_PURPLE_TIBERIUM_PROPERTIES = new ForgeFlowingFluid.Properties(
+            () -> PURPLE_TIBERIUM_FLUID.get(), () -> PURPLE_TIBERIUM_FLOWING.get(), FluidAttributes.builder(AT_STILL_RL, AT_FLOWING_RL)
+            .density(15).luminosity(2).viscosity(5).sound(SoundEvents.ITEM_BUCKET_EMPTY_LAVA).overlay(LAVA_OVERLAY_RL)
+    ).slopeFindDistance(2).levelDecreasePerBlock(2)
+            .block(() -> ModFluids.LIQUID_PURPLE_TIBERIUM_BLOCK.get()).bucket(() -> ModItems.PURPLE_TIBERIUM_BUCKET.get());
+
+    public static final RegistryObject<FlowingFluidBlock> LIQUID_PURPLE_TIBERIUM_BLOCK = ModBlocks.BLOCKS.register("liquid_purple_tiberium",
+            () -> new FlowingFluidBlock(() -> ModFluids.PURPLE_TIBERIUM_FLUID.get(), AbstractBlock.Properties.create(Material.LAVA)
                     .doesNotBlockMovement().hardnessAndResistance(100f).noDrops().setLightLevel(liquid_tiberium)));
 
 
