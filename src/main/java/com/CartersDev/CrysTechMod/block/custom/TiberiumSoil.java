@@ -40,8 +40,7 @@ public class TiberiumSoil extends Block {
             }
 
             //Soil Spread logic
-//            private boolean blockIsValidForSpread(BlockState clickedBlock) {
-//                return clickedBlock.isIn(CrysTechTags.Blocks.TIBERIUM_PROOF_BLOCKS);
+
         }
     }
 

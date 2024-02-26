@@ -136,9 +136,18 @@
   "block.crystechmod.yellow_tibercrete_stairs": "Yellow Tibercrete Stairs",
   "block.crystechmod.plagued_leaves": "Plagued Leaves",
   "block.crystechmod.core_steel_sign": "Core Steel Sign",
-  "block.crystechmod.core_steel_wall_sign": "Core Steel Wall Sign",
-
-
+  "block.crystechmod.infested_andesite": "Infested Andesite",
+  "block.crystechmod.infested_cobble": "Infested Cobblestone",
+  "block.crystechmod.infested_diorite": "Infested Diorite",
+  "block.crystechmod.infested_granite": "Infested Granite",
+  "block.crystechmod.infested_stone": "Infested Stone",
+  "block.crystechmod.infested_stone_bricks": "Infested Stone Bricks",
+  "block.crystechmod.yellow_zone_cracked_dirt": "Yellow Zone Dirt",
+  "block.crystechmod.seeded_yellow_zone_cracked_dirt": "Seeded Yellow Zone Dirt",
+  "block.crystechmod.yellow_zone_sand": "Yellow Zone Sand",
+  "block.crystechmod.red_zone_dirt": "Red Zone Dirt",
+  "block.crystechmod.seeded_red_zone_dirt": "Seeded Red Zone Dirt",
+  "block.crystechmod.red_zone_sand": "Red Zone Sand",
 
 
   "fluid.crystechmod.tiberium_fluid": "Liquid Riparius Tiberium",

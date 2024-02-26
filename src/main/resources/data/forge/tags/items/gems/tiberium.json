@@ -2,7 +2,9 @@
   "replace": false,
   "values": [
     "crystechmod:tiberium",
-    "crystechmod:tiberium_blue"
+    "crystechmod:tiberium_blue",
+    "crystechmod:tiberium_red",
+    "crystechmod:tiberium_purple"
 
 
   ]

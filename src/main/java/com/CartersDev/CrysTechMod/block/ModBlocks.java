@@ -29,17 +29,82 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS
             = DeferredRegister.create(ForgeRegistries.BLOCKS, CrystalTech.MOD_ID);
 
-    //Ordinary Blocks:
-
+    //Terrain Blocks
     public static final RegistryObject<Block> TIBERIUM_SOIL = registerBlock("tiberium_soil",
             () -> new TiberiumSoil(AbstractBlock.Properties.create(Material.EARTH)
                     .harvestLevel(3).harvestTool(ToolType.SHOVEL).tickRandomly()
-                    .setRequiresTool().hardnessAndResistance(5f)));
+                    .setRequiresTool().hardnessAndResistance(5f).sound(SoundType.GROUND)));
 
     public static final RegistryObject<Block> ICHOR_SOIL = registerBlock("ichor_soil",
             () -> new IchorSoil(AbstractBlock.Properties.create(Material.EARTH)
                     .harvestLevel(3).harvestTool(ToolType.SHOVEL).tickRandomly()
+                    .setRequiresTool().hardnessAndResistance(5f).sound(SoundType.GROUND)));
+
+    public static final RegistryObject<Block> INFESTED_STONE = registerBlock("infested_stone",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> INFESTED_STONE_BRICKS = registerBlock("infested_stone_bricks",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> INFESTED_COBBLE = registerBlock("infested_cobble",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> INFESTED_DIORITE = registerBlock("infested_diorite",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> INFESTED_GRANITE = registerBlock("infested_granite",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> INFESTED_ANDESITE = registerBlock("infested_andesite",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> YELLOW_ZONE_CRACKED_DIRT = registerBlock("yellow_zone_cracked_dirt",
+            () -> new Block(AbstractBlock.Properties.create(Material.EARTH)
+                    .harvestLevel(3).harvestTool(ToolType.SHOVEL)
+                    .setRequiresTool().hardnessAndResistance(5f).sound(SoundType.GROUND)));
+
+    public static final RegistryObject<Block> RED_ZONE_DIRT = registerBlock("red_zone_dirt",
+            () -> new Block(AbstractBlock.Properties.create(Material.EARTH)
+                    .harvestLevel(3).harvestTool(ToolType.SHOVEL)
+                    .setRequiresTool().hardnessAndResistance(5f).sound(SoundType.GROUND)));
+
+    public static final RegistryObject<Block> SEEDED_YELLOW_ZONE_CRACKED_DIRT = registerBlock("seeded_yellow_zone_cracked_dirt",
+            () -> new Block(AbstractBlock.Properties.create(Material.EARTH)
+                    .harvestLevel(3).harvestTool(ToolType.SHOVEL)
+                    .setRequiresTool().hardnessAndResistance(5f).sound(SoundType.GROUND)));
+
+    public static final RegistryObject<Block> SEEDED_RED_ZONE_DIRT = registerBlock("seeded_red_zone_dirt",
+            () -> new Block(AbstractBlock.Properties.create(Material.EARTH)
+                    .harvestLevel(3).harvestTool(ToolType.SHOVEL)
+                    .setRequiresTool().hardnessAndResistance(5f).sound(SoundType.GROUND)));
+
+    public static final RegistryObject<Block> YELLOW_ZONE_SAND = registerBlock("yellow_zone_sand",
+            () -> new Block(AbstractBlock.Properties.create(Material.SAND)
+                    .harvestLevel(3).harvestTool(ToolType.SHOVEL)
+                    .setRequiresTool().hardnessAndResistance(5f).sound(SoundType.SAND)));
+
+    public static final RegistryObject<Block> RED_ZONE_SAND = registerBlock("red_zone_sand",
+            () -> new Block(AbstractBlock.Properties.create(Material.SAND)
+                    .harvestLevel(3).harvestTool(ToolType.SHOVEL)
+                    .setRequiresTool().hardnessAndResistance(5f).sound(SoundType.SAND)));
+
+
+    //End Terrain Blocks
+
+
+    //Metal and Mineral Blocks:
 
     public static final RegistryObject<Block> FIRESTONE_BLOCK = registerBlock("firestone_block",
             () -> new FirestoneBlock(AbstractBlock.Properties.create(Material.IRON)
@@ -115,7 +180,7 @@ public class ModBlocks {
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(3).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
-    //End Ordinary Blocks
+    //End Metals and Minerals Blocks
 
     //Wood:
 

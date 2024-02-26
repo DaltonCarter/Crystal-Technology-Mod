@@ -16,6 +16,11 @@
     "crystechmod:red_tibercrete",
     "crystechmod:lime_tibercrete",
     "crystechmod:white_tibercrete",
-    "crystechmod:yellow_tibercrete"
+    "crystechmod:yellow_tibercrete",
+    "crystechmod:fire_stone_block",
+    "crystechmod:lg_core_block",
+    "crystechmod:mg_core_block",
+    "crystechmod:hg_core_block"
+
   ]
 }
