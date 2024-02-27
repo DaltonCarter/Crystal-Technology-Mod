@@ -148,6 +148,14 @@
   "block.crystechmod.red_zone_dirt": "Red Zone Dirt",
   "block.crystechmod.seeded_red_zone_dirt": "Seeded Red Zone Dirt",
   "block.crystechmod.red_zone_sand": "Red Zone Sand",
+  "block.crystechmod.riparius_stone": "Riparius Stone",
+  "block.crystechmod.vinifera_stone": "Vinifera Stone",
+  "block.crystechmod.cruentus_stone": "Cruentus Stone",
+  "block.crystechmod.aboreus_stone": "Aboreus Stone",
+  "block.crystechmod.riparius_crystal": "Riparius Crystal",
+  "block.crystechmod.vinifera_crystal": "Vinifera Crystal",
+  "block.crystechmod.cruentus_crystal": "Cruentus Crystal",
+  "block.crystechmod.aboreus_crystal": "Aboreus Crystal",
 
 
   "fluid.crystechmod.tiberium_fluid": "Liquid Riparius Tiberium",

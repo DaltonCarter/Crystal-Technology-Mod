@@ -42,32 +42,32 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> INFESTED_STONE = registerBlock("infested_stone",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> INFESTED_STONE_BRICKS = registerBlock("infested_stone_bricks",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> INFESTED_COBBLE = registerBlock("infested_cobble",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> INFESTED_DIORITE = registerBlock("infested_diorite",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> INFESTED_GRANITE = registerBlock("infested_granite",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> INFESTED_ANDESITE = registerBlock("infested_andesite",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> YELLOW_ZONE_CRACKED_DIRT = registerBlock("yellow_zone_cracked_dirt",
@@ -92,13 +92,57 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> YELLOW_ZONE_SAND = registerBlock("yellow_zone_sand",
             () -> new Block(AbstractBlock.Properties.create(Material.SAND)
-                    .harvestLevel(3).harvestTool(ToolType.SHOVEL)
+                    .harvestLevel(2).harvestTool(ToolType.SHOVEL)
                     .setRequiresTool().hardnessAndResistance(5f).sound(SoundType.SAND)));
 
     public static final RegistryObject<Block> RED_ZONE_SAND = registerBlock("red_zone_sand",
             () -> new Block(AbstractBlock.Properties.create(Material.SAND)
-                    .harvestLevel(3).harvestTool(ToolType.SHOVEL)
+                    .harvestLevel(2).harvestTool(ToolType.SHOVEL)
                     .setRequiresTool().hardnessAndResistance(5f).sound(SoundType.SAND)));
+
+    public static final RegistryObject<Block> RIPARIUS_STONE = registerBlock("riparius_stone",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> VINIFERA_STONE = registerBlock("vinifera_stone",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> CRUENTUS_STONE = registerBlock("cruentus_stone",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> ABOREUS_STONE = registerBlock("aboreus_stone",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> RIPARIUS_CRYSTAL = registerBlock("riparius_crystal",
+            () -> new Block(AbstractBlock.Properties.create(Material.ICE)
+                    .harvestLevel(4).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> VINIFERA_CRYSTAL = registerBlock("vinifera_crystal",
+            () -> new Block(AbstractBlock.Properties.create(Material.ICE)
+                    .harvestLevel(4).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> CRUENTUS_CRYSTAL = registerBlock("cruentus_crystal",
+            () -> new Block(AbstractBlock.Properties.create(Material.ICE)
+                    .harvestLevel(4).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)
+                    .notSolid()));
+
+    public static final RegistryObject<Block> ABOREUS_CRYSTAL = registerBlock("aboreus_crystal",
+            () -> new Block(AbstractBlock.Properties.create(Material.ICE)
+                    .harvestLevel(4).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)
+                    .notSolid()));
 
 
     //End Terrain Blocks
@@ -163,22 +207,22 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> TIBERIUM_BLOCK = registerBlock("tiberium_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> TIBERIUM_BLUE_BLOCK = registerBlock("tiberium_blue_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> TIBERIUM_RED_BLOCK = registerBlock("tiberium_red_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> TIBERIUM_PURPLE_BLOCK = registerBlock("tiberium_purple_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
     //End Metals and Minerals Blocks
 
@@ -271,7 +315,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> PLAGUED_STAIRS = registerBlock("plagued_stairs",
             () -> new StairsBlock(() -> PLAGUED_PLANKS.get().getDefaultState(),
-                    AbstractBlock.Properties.create(Material.WOOD).harvestLevel(3)
+                    AbstractBlock.Properties.create(Material.WOOD).harvestLevel(2)
                             .harvestTool(ToolType.AXE).setRequiresTool()));
 
     public static final RegistryObject<Block> PLAGUED_FENCE = registerBlock("plagued_fence",
@@ -585,7 +629,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> QUALRITE_ORE = registerBlock("qualrite_ore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(4).harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f)));
     //End Ores
 
