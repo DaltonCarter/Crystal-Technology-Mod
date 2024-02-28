@@ -30,7 +30,8 @@ public class TiberiumSoil extends Block {
                 int number = random.nextInt(10);
 
                 if(number > 7){
-                    System.out.println("A patch of Vinifera Tiberium has sprouted!.");
+
+
                     worldIn.setBlockState(abovePos, ModBlocks.BLUE_TIBERIUM_CROP.get().getDefaultState());
                 }else {
                     System.out.println("A patch of Riparius Tiberium has sprouted!.");

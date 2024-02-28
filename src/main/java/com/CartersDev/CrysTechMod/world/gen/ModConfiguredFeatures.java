@@ -12,15 +12,15 @@ import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
 
 public class ModConfiguredFeatures {
 
-//    public static final ConfiguredFeature<BaseTreeFeatureConfig, ?> PLAGUED =
-//            register("plagued", Feature.TREE.withConfiguration((
-//                    new BaseTreeFeatureConfig.Builder(
-//                            new SimpleBlockStateProvider(ModBlocks.PLAGUED_LOG.get().getDefaultState()),
-//                            new SimpleBlockStateProvider(ModBlocks.PLAGUED_LEAVES.get().getDefaultState()),
-//                            new BlobFoliagePlacer(FeatureSpread.create(1), FeatureSpread.create(0), 3),
-////                            new StraightTrunkPlacer(6, 4, 3),
-//                            new FancyTrunkPlacer(8, 4, 3),
-//                            new TwoLayerFeature(2, 0, 1))).setIgnoreVines().build()));
+    public static final ConfiguredFeature<BaseTreeFeatureConfig, ?> PLAGUED =
+            register("plagued", Feature.TREE.withConfiguration((
+                    new BaseTreeFeatureConfig.Builder(
+                            new SimpleBlockStateProvider(ModBlocks.PLAGUED_LOG.get().getDefaultState()),
+                            new SimpleBlockStateProvider(ModBlocks.PLAGUED_LEAVES.get().getDefaultState()),
+                            new BlobFoliagePlacer(FeatureSpread.create(1), FeatureSpread.create(0), 3),
+//                            new StraightTrunkPlacer(6, 4, 3),
+                            new FancyTrunkPlacer(8, 4, 3),
+                            new TwoLayerFeature(2, 0, 1))).setIgnoreVines().build()));
 
 
     public static final ConfiguredFeature<?, ?> HYACINTH_CONFIG =  Feature.FLOWER.withConfiguration((
