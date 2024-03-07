@@ -205,6 +205,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> PLAGUED_STICK = ITEMS.register("plagued_stick",
             () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+//    public static final RegistryObject<Item> Tiberium_ARROW = ITEMS.register("tiberium_arrow",
+//            () -> new ArrowItem(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
     //end Misc
 
 

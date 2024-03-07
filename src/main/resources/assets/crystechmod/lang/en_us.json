@@ -156,6 +156,10 @@
   "block.crystechmod.vinifera_crystal": "Vinifera Crystal",
   "block.crystechmod.cruentus_crystal": "Cruentus Crystal",
   "block.crystechmod.aboreus_crystal": "Aboreus Crystal",
+  "block.crystechmod.infested_stone_brick_slab": "Infested Stone Brick Slab",
+  "block.crystechmod.infested_stone_brick_stairs": "Infested Stone Brick Stairs",
+  "block.crystechmod.firestone_wall": "Firestone Wall",
+
 
 
   "fluid.crystechmod.tiberium_fluid": "Liquid Riparius Tiberium",
@@ -172,5 +176,8 @@
 
 
   "tooltip.crystechmod.firestone": "Hold \u00A7e SHIFT \u00A7r for more information.",
-  "tooltip.crystechmod.firestone_shift": "Might set you on fire, but might also protect from it!"
+  "tooltip.crystechmod.firestone_shift": "Might set you on fire, but might also protect from it!",
+
+  "tooltip.crystechmod.firestone_wall": "Hold \u00A7e SHIFT \u00A7r for more information.",
+  "tooltip.crystechmod.firestone_wall_shift": "For those times when things REALLY need to stay off your lawn."
 }

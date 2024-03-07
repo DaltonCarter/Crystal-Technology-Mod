@@ -594,6 +594,21 @@ public class ModBlocks {
                     AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2)
                             .harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
+    public static final RegistryObject<Block> INFESTED_STONE_BRICK_STAIRS = registerBlock("infested_stone_brick_stairs",
+            () -> new StairsBlock(() -> INFESTED_STONE_BRICKS.get().getDefaultState(),
+                    AbstractBlock.Properties.create(Material.ROCK).harvestLevel(2)
+                            .harvestTool(ToolType.PICKAXE).setRequiresTool()));
+
+    public static final RegistryObject<Block> INFESTED_STONE_BRICK_SLAB = registerBlock("infested_stone_brick_slab",
+            () -> new SlabBlock(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> FIRESTONE_WALL = registerBlock("firestone_wall",
+            () -> new FirestoneWallBlock(AbstractBlock.Properties.create(Material.ROCK)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
     //end Deco Blocks
 
     //Ores:
