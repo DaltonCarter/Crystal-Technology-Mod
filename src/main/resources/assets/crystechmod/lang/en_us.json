@@ -158,7 +158,29 @@
   "block.crystechmod.aboreus_crystal": "Aboreus Crystal",
   "block.crystechmod.infested_stone_brick_slab": "Infested Stone Brick Slab",
   "block.crystechmod.infested_stone_brick_stairs": "Infested Stone Brick Stairs",
-  "block.crystechmod.firestone_wall": "Firestone Wall",
+  "block.crystechmod.clear_tiberglass": "Tiberglass",
+  "block.crystechmod.black_tiberglass": "Black Tiberglass",
+  "block.crystechmod.blue_tiberglass": "Blue Tiberglass",
+  "block.crystechmod.brown_tiberglass": "Brown Tiberglass",
+  "block.crystechmod.cyan_tiberglass": "Cyan Tiberglass",
+  "block.crystechmod.gray_tiberglass": "Gray Tiberglass",
+  "block.crystechmod.green_tiberglass": "Green Tiberglass",
+  "block.crystechmod.light_blue_tiberglass": "Light Blue Tiberglass",
+  "block.crystechmod.light_gray_tiberglass": "Light Gray Tiberglass",
+  "block.crystechmod.lime_tiberglass": "Lime Tiberglass",
+  "block.crystechmod.magenta_tiberglass": "Magenta Tiberglass",
+  "block.crystechmod.orange_tiberglass": "Orange Tiberglass",
+  "block.crystechmod.pink_tiberglass": "Pink Tiberglass",
+  "block.crystechmod.purple_tiberglass": "Purple Tiberglass",
+  "block.crystechmod.red_tiberglass": "Red Tiberglass",
+  "block.crystechmod.white_tiberglass": "White Tiberglass",
+  "block.crystechmod.yellow_tiberglass": "Yellow Tiberglass",
+  "block.crystechmod.gdi_tiberglass": "GDI Tiberglass",
+  "block.crystechmod.nod_tiberglass": "Nod Tiberglass",
+  "block.crystechmod.mosaic_tiberglass": "Mosaic Tiberglass",
+
+
+
 
 
 

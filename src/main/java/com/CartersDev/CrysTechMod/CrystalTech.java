@@ -100,6 +100,29 @@ public class CrystalTech
             RenderTypeLookup.setRenderLayer(ModBlocks.VINIFERA_CRYSTAL.get(), RenderType.getTranslucent());
             RenderTypeLookup.setRenderLayer(ModBlocks.CRUENTUS_CRYSTAL.get(), RenderType.getTranslucent());
             RenderTypeLookup.setRenderLayer(ModBlocks.ABOREUS_CRYSTAL.get(), RenderType.getTranslucent());
+            //Glass:
+            RenderTypeLookup.setRenderLayer(ModBlocks.CLEAR_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.BLACK_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.BLUE_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.BROWN_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.CYAN_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.GRAY_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.GREEN_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.LIGHT_BLUE_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.LIGHT_GRAY_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.LIME_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.MAGENTA_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.ORANGE_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.PINK_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.PURPLE_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.RED_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.WHITE_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.YELLOW_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.GDI_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.NOD_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.MOSAIC_TIBERGLASS.get(), RenderType.getTranslucent());
+
+            //End Glass:
 
             RenderTypeLookup.setRenderLayer(ModBlocks.PLAGUED_LEAVES.get(), RenderType.getCutout());
 //           RenderTypeLookup.setRenderLayer(ModBlocks.REDWOOD_SAPLING.get(), RenderType.getCutout());

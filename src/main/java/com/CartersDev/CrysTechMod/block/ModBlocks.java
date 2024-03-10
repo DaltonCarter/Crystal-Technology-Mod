@@ -122,25 +122,25 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> RIPARIUS_CRYSTAL = registerBlock("riparius_crystal",
             () -> new Block(AbstractBlock.Properties.create(Material.ICE)
-                    .harvestLevel(4).harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(4).harvestTool(ToolType.PICKAXE).sound(SoundType.GLASS)
                     .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)
                     .notSolid()));
 
     public static final RegistryObject<Block> VINIFERA_CRYSTAL = registerBlock("vinifera_crystal",
             () -> new Block(AbstractBlock.Properties.create(Material.ICE)
-                    .harvestLevel(4).harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(4).harvestTool(ToolType.PICKAXE).sound(SoundType.GLASS)
                     .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)
                     .notSolid()));
 
     public static final RegistryObject<Block> CRUENTUS_CRYSTAL = registerBlock("cruentus_crystal",
             () -> new Block(AbstractBlock.Properties.create(Material.ICE)
-                    .harvestLevel(4).harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(4).harvestTool(ToolType.PICKAXE).sound(SoundType.GLASS)
                     .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)
                     .notSolid()));
 
     public static final RegistryObject<Block> ABOREUS_CRYSTAL = registerBlock("aboreus_crystal",
             () -> new Block(AbstractBlock.Properties.create(Material.ICE)
-                    .harvestLevel(4).harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(4).harvestTool(ToolType.PICKAXE).sound(SoundType.GLASS)
                     .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)
                     .notSolid()));
 
@@ -607,6 +607,106 @@ public class ModBlocks {
     public static final RegistryObject<Block> FIRESTONE_WALL = registerBlock("firestone_wall",
             () -> new FirestoneWallBlock(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE)
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> CLEAR_TIBERGLASS = registerBlock("clear_tiberglass",
+            () -> new GlassBlock(AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> BLACK_TIBERGLASS = registerBlock("black_tiberglass",
+            () -> new StainedGlassBlock(DyeColor.BLACK ,AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> BLUE_TIBERGLASS = registerBlock("blue_tiberglass",
+            () -> new StainedGlassBlock(DyeColor.BLUE, AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> BROWN_TIBERGLASS = registerBlock("brown_tiberglass",
+            () -> new StainedGlassBlock(DyeColor.BROWN ,AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> CYAN_TIBERGLASS = registerBlock("cyan_tiberglass",
+            () -> new StainedGlassBlock(DyeColor.CYAN, AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> GRAY_TIBERGLASS = registerBlock("gray_tiberglass",
+            () -> new StainedGlassBlock(DyeColor.GRAY ,AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> GREEN_TIBERGLASS = registerBlock("green_tiberglass",
+            () -> new StainedGlassBlock(DyeColor.GREEN, AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_TIBERGLASS = registerBlock("light_blue_tiberglass",
+            () -> new StainedGlassBlock(DyeColor.LIGHT_BLUE ,AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_TIBERGLASS = registerBlock("light_gray_tiberglass",
+            () -> new StainedGlassBlock(DyeColor.LIGHT_GRAY ,AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> LIME_TIBERGLASS = registerBlock("lime_tiberglass",
+            () -> new StainedGlassBlock(DyeColor.LIME, AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> MAGENTA_TIBERGLASS = registerBlock("magenta_tiberglass",
+            () -> new StainedGlassBlock(DyeColor.MAGENTA ,AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> ORANGE_TIBERGLASS = registerBlock("orange_tiberglass",
+            () -> new StainedGlassBlock(DyeColor.ORANGE, AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> PINK_TIBERGLASS = registerBlock("pink_tiberglass",
+            () -> new StainedGlassBlock(DyeColor.PINK ,AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> PURPLE_TIBERGLASS = registerBlock("purple_tiberglass",
+            () -> new StainedGlassBlock(DyeColor.PURPLE, AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> RED_TIBERGLASS = registerBlock("red_tiberglass",
+            () -> new StainedGlassBlock(DyeColor.RED ,AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> WHITE_TIBERGLASS = registerBlock("white_tiberglass",
+            () -> new StainedGlassBlock(DyeColor.WHITE, AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> YELLOW_TIBERGLASS = registerBlock("yellow_tiberglass",
+            () -> new StainedGlassBlock(DyeColor.YELLOW, AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> GDI_TIBERGLASS = registerBlock("gdi_tiberglass",
+            () -> new GlassBlock(AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> NOD_TIBERGLASS = registerBlock("nod_tiberglass",
+            () -> new GlassBlock(AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> MOSAIC_TIBERGLASS = registerBlock("mosaic_tiberglass",
+            () -> new GlassBlock(AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
                     .setRequiresTool().hardnessAndResistance(5f)));
 
     //end Deco Blocks
