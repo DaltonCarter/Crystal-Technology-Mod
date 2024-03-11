@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "crystechmod:yellow_tiberglass"
+    }
+  },
+  "result": {
+    "item": "crystechmod:yellow_tiberglass_pane",
+    "count": 16
+  }
+}

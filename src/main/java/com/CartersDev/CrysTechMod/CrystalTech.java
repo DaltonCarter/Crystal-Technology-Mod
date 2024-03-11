@@ -12,6 +12,7 @@ import com.CartersDev.CrysTechMod.world.structure.structures.ModStructures;
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.FlowerPotBlock;
 import net.minecraft.block.WoodType;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.renderer.Atlases;
@@ -123,6 +124,28 @@ public class CrystalTech
             RenderTypeLookup.setRenderLayer(ModBlocks.MOSAIC_TIBERGLASS.get(), RenderType.getTranslucent());
             RenderTypeLookup.setRenderLayer(ModBlocks.WOLF_TIBERGLASS.get(), RenderType.getTranslucent());
 
+            RenderTypeLookup.setRenderLayer(ModBlocks.CLEAR_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.BLACK_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.BLUE_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.BROWN_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.CYAN_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.GRAY_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.GREEN_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.LIGHT_BLUE_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.LIGHT_GRAY_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.LIME_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.MAGENTA_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.ORANGE_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.PINK_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.PURPLE_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.RED_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.WHITE_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.YELLOW_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.GDI_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.NOD_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.MOSAIC_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.WOLF_TIBERGLASS_PANE.get(), RenderType.getTranslucent());
+
             //End Glass:
 
             RenderTypeLookup.setRenderLayer(ModBlocks.PLAGUED_LEAVES.get(), RenderType.getCutout());
@@ -130,6 +153,7 @@ public class CrystalTech
 
             RenderTypeLookup.setRenderLayer(ModBlocks.HYACINTH.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.FLOWER_OF_LIFE.get(), RenderType.getCutout());
+
 
             ScreenManager.registerFactory(ModContainers.LIGHTNING_CHANNELER_CONTAINER.get(),
                     LightningChannelerScreen::new);
