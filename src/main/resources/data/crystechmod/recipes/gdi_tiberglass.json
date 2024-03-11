@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stained_glass",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "crystechmod:yellow_tiberglass"
+    },
+    "X": {
+      "item": "crystechmod:gdi_emblem"
+    }
+  },
+  "result": {
+    "item": "crystechmod:gdi_tiberglass",
+    "count": 8
+  }
+}

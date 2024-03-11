@@ -709,6 +709,11 @@ public class ModBlocks {
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
                     .setRequiresTool().hardnessAndResistance(5f)));
 
+    public static final RegistryObject<Block> WOLF_TIBERGLASS = registerBlock("wolf_tiberglass",
+            () -> new GlassBlock(AbstractBlock.Properties.create(Material.GLASS).sound(SoundType.GLASS)
+                    .harvestLevel(2).harvestTool(ToolType.PICKAXE).notSolid()
+                    .setRequiresTool().hardnessAndResistance(5f)));
+
     //end Deco Blocks
 
     //Ores:

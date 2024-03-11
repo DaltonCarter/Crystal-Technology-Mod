@@ -40,6 +40,9 @@
   "item.crystechmod.gundanium_leggings": "Gundanium Leggings",
   "item.crystechmod.gundanium_boots": "Gundanium Boots",
   "item.crystechmod.gundanium_horse_armor": "Gundanium Horse Armor",
+  "item.crystechmod.gdi_emblem": "GDI Emblem",
+  "item.crystechmod.nod_emblem": "Nod Emblem",
+  "item.crystechmod.wolf_emblem": "Wolf Emblem",
   
   
   "block.crystechmod.aeries_ore": "Aeries Ore",
@@ -178,6 +181,7 @@
   "block.crystechmod.gdi_tiberglass": "GDI Tiberglass",
   "block.crystechmod.nod_tiberglass": "Nod Tiberglass",
   "block.crystechmod.mosaic_tiberglass": "Mosaic Tiberglass",
+  "block.crystechmod.wolf_tiberglass": "Wolf Tiberglass",
 
 
 

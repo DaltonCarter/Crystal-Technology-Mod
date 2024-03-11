@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stained_glass",
+  "pattern": [
+    "B#B",
+    "#X#",
+    "B#B"
+  ],
+  "key": {
+    "#": {
+      "item": "crystechmod:red_tiberglass"
+    },
+    "B": {
+      "item": "crystechmod:black_tiberglass"
+    },
+    "X": {
+      "item": "crystechmod:wolf_emblem"
+    }
+  },
+  "result": {
+    "item": "crystechmod:wolf_tiberglass",
+    "count": 8
+  }
+}

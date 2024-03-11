@@ -206,6 +206,15 @@ public class ModItems {
     public static final RegistryObject<Item> PLAGUED_STICK = ITEMS.register("plagued_stick",
             () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
 
+    public static final RegistryObject<Item> GDI_EMBLEM = ITEMS.register("gdi_emblem",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> NOD_EMBLEM = ITEMS.register("nod_emblem",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
+    public static final RegistryObject<Item> WOLF_EMBLEM = ITEMS.register("wolf_emblem",
+            () -> new Item(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
+
 //    public static final RegistryObject<Item> Tiberium_ARROW = ITEMS.register("tiberium_arrow",
 //            () -> new ArrowItem(new Item.Properties().group(ModItemGroup.CRYS_TECH)));
     //end Misc

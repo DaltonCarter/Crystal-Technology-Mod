@@ -121,6 +121,7 @@ public class CrystalTech
             RenderTypeLookup.setRenderLayer(ModBlocks.GDI_TIBERGLASS.get(), RenderType.getTranslucent());
             RenderTypeLookup.setRenderLayer(ModBlocks.NOD_TIBERGLASS.get(), RenderType.getTranslucent());
             RenderTypeLookup.setRenderLayer(ModBlocks.MOSAIC_TIBERGLASS.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.WOLF_TIBERGLASS.get(), RenderType.getTranslucent());
 
             //End Glass:
 

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stained_glass",
+  "pattern": [
+    "#G#",
+    "P#B",
+    "#R#"
+  ],
+  "key": {
+    "#": {
+      "item": "crystechmod:clear_tiberglass"
+    },
+    "G": {
+      "item": "crystechmod:green_tiberium_dust"
+    },
+    "B": {
+      "item": "crystechmod:blue_tiberium_dust"
+    },
+    "R": {
+      "item": "crystechmod:red_tiberium_dust"
+    },
+    "P": {
+      "item": "crystechmod:purple_tiberium_dust"
+    }
+  },
+  "result": {
+    "item": "crystechmod:mosaic_tiberglass",
+    "count": 5
+  }
+}
