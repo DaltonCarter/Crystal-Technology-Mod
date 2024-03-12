@@ -154,6 +154,9 @@ public class CrystalTech
             RenderTypeLookup.setRenderLayer(ModBlocks.HYACINTH.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.FLOWER_OF_LIFE.get(), RenderType.getCutout());
 
+            RenderTypeLookup.setRenderLayer(ModBlocks.POTTED_HYACINTH.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.POTTED_FLOWER_OF_LIFE.get(), RenderType.getCutout());
+
 
             ScreenManager.registerFactory(ModContainers.LIGHTNING_CHANNELER_CONTAINER.get(),
                     LightningChannelerScreen::new);

@@ -820,6 +820,8 @@ public class ModBlocks {
                     .setRequiresTool().hardnessAndResistance(5f)));
 
 
+
+
     //end Deco Blocks
 
     //Ores:
@@ -866,6 +868,14 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> HYACINTH = registerBlock("hyacinth",
             () -> new FlowerBlock(Effects.HASTE, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> POTTED_HYACINTH = registerBlock("potted_hyacinth",
+            () -> new FlowerPotBlock(HYACINTH.get(), AbstractBlock.Properties.create(Material.MISCELLANEOUS)
+                    .zeroHardnessAndResistance().notSolid()));
+
+    public static final RegistryObject<Block> POTTED_FLOWER_OF_LIFE = registerBlock("potted_flower_of_life",
+            () -> new FlowerPotBlock(FLOWER_OF_LIFE.get(), AbstractBlock.Properties.create(Material.MISCELLANEOUS)
+                    .zeroHardnessAndResistance().notSolid()));
     //End Flowers
 
 
