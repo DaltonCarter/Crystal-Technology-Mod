@@ -2,6 +2,7 @@ package com.CartersDev.CrysTechMod.block;
 
 import com.CartersDev.CrysTechMod.CrystalTech;
 import com.CartersDev.CrysTechMod.block.custom.*;
+import com.CartersDev.CrysTechMod.block.custom.Trees.FlowerofLifeBlock;
 import com.CartersDev.CrysTechMod.item.ModItemGroup;
 import com.CartersDev.CrysTechMod.item.ModItems;
 import net.minecraft.block.*;
@@ -864,7 +865,7 @@ public class ModBlocks {
 
     //Flowers:
     public static final RegistryObject<Block> FLOWER_OF_LIFE = registerBlock("flower_of_life",
-            () -> new FlowerBlock(Effects.REGENERATION, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+            () -> new FlowerofLifeBlock(Effects.REGENERATION, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
     public static final RegistryObject<Block> HYACINTH = registerBlock("hyacinth",
             () -> new FlowerBlock(Effects.HASTE, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
@@ -892,12 +893,12 @@ public class ModBlocks {
                     .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)));
 
     public static final RegistryObject<Block> RED_TIBERIUM_CROP = BLOCKS.register("red_tiberium_crop",
-            () -> new GreenTiberiumCrystalBlock(AbstractBlock.Properties.create(Material.IRON)
+            () -> new RedTiberiumCrystalBlock(AbstractBlock.Properties.create(Material.IRON)
                     .harvestLevel(3).doesNotBlockMovement().harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)));
 
     public static final RegistryObject<Block> PURPLE_TIBERIUM_CROP = BLOCKS.register("purple_tiberium_crop",
-            () -> new BlueTiberiumCrystalBlock(AbstractBlock.Properties.create(Material.IRON)
+            () -> new PurpleTiberiumCrystalBlock(AbstractBlock.Properties.create(Material.IRON)
                     .harvestLevel(3).doesNotBlockMovement().harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)));
     //End Crops

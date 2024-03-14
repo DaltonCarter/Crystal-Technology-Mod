@@ -6,11 +6,19 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.CropsBlock;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effects;
 import net.minecraft.util.IItemProvider;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.world.Difficulty;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.world.World;
+
+import java.util.Objects;
 
 public class PurpleTiberiumCrystalBlock extends CropsBlock {
 
@@ -45,6 +53,19 @@ public class PurpleTiberiumCrystalBlock extends CropsBlock {
     @Override
     public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
         return SHAPE_BY_AGE[state.get(this.getAgeProperty())];
+    }
+
+    public void onEntityCollision(BlockState state, World worldIn, BlockPos pos, Entity entity) {
+        if(!worldIn.isRemote && worldIn.getDifficulty() != Difficulty.PEACEFUL) {
+            if(entity instanceof LivingEntity) {
+                LivingEntity target = (LivingEntity) entity;
+                boolean entityIsPoisoned = !Objects.equals(target.getActivePotionEffect(Effects.POISON), null);
+                if(!entityIsPoisoned) {
+                    target.addPotionEffect(new EffectInstance(Effects.POISON, 160, 3));
+                }
+
+            }
+        }
     }
 
 }
