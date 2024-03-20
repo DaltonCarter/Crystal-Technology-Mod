@@ -18,6 +18,12 @@ public class CrysTechTags {
         public static final Tags.IOptionalNamedTag<Block> TIBERIUM_PROOF_BLOCKS =
                 createTag("tiberium_proof_blocks");
 
+        public static final Tags.IOptionalNamedTag<Block> TIBERIUM_SEED_BLOCKS =
+                createTag("tiberium_seed_blocks");
+
+        public static final Tags.IOptionalNamedTag<Block> TIBERIUM_VIABLE_BLOCKS =
+                createTag("tiberium_viable_blocks");
+
         private static Tags.IOptionalNamedTag<Block> createTag(String name) {
             return BlockTags.createOptional(new ResourceLocation(CrystalTech.MOD_ID, name));
         }

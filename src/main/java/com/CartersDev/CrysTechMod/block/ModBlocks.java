@@ -26,6 +26,7 @@ import java.util.function.ToIntFunction;
 public class ModBlocks {
 
     public static ToIntFunction<BlockState> tiberiumglow = BlockState -> 7;
+    public static ToIntFunction<BlockState> blossomglow = BlockState -> 12;
 
     public static final DeferredRegister<Block> BLOCKS
             = DeferredRegister.create(ForgeRegistries.BLOCKS, CrystalTech.MOD_ID);
@@ -144,6 +145,11 @@ public class ModBlocks {
                     .harvestLevel(4).harvestTool(ToolType.PICKAXE).sound(SoundType.GLASS)
                     .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)
                     .notSolid()));
+
+    public static final RegistryObject<Block> SEEDED_DIRT = registerBlock("seeded_dirt",
+            () -> new Block(AbstractBlock.Properties.create(Material.EARTH)
+                    .harvestLevel(3).harvestTool(ToolType.SHOVEL)
+                    .setRequiresTool().hardnessAndResistance(5f).sound(SoundType.GROUND)));
 
 
     //End Terrain Blocks
@@ -310,6 +316,26 @@ public class ModBlocks {
                     return 5;
                 }
             });
+
+    public static final RegistryObject<Block> BLOSSOM_BASE = registerBlock("blossom_base",
+            () -> new RotatedPillarBlock(AbstractBlock.Properties.create(Material.WOOD)
+                    .harvestLevel(4).harvestTool(ToolType.AXE)
+                    .setRequiresTool().hardnessAndResistance(-1f)));
+
+    public static final RegistryObject<Block> BLOSSOM_CENTER = registerBlock("blossom_center",
+            () -> new RotatedPillarBlock(AbstractBlock.Properties.create(Material.WOOD)
+                    .harvestLevel(4).harvestTool(ToolType.AXE)
+                    .setRequiresTool().hardnessAndResistance(-1f)));
+
+    public static final RegistryObject<Block> BLOSSOM_SPOUT = registerBlock("blossom_spout",
+            () -> new BlossomTreeSpout(AbstractBlock.Properties.create(Material.WOOD)
+                    .harvestLevel(4).harvestTool(ToolType.AXE).tickRandomly()
+                    .setRequiresTool().hardnessAndResistance(-1f).setLightLevel(blossomglow)));
+
+    public static final RegistryObject<Block> BLOSSOM_FILLER = registerBlock("blossom_filler",
+            () -> new RotatedPillarBlock(AbstractBlock.Properties.create(Material.WOOD)
+                    .harvestLevel(4).harvestTool(ToolType.AXE)
+                    .setRequiresTool().hardnessAndResistance(-1f)));
     //End Wood
 
     //Deco Blocks:

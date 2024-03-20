@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "crystechmod:yellow_zone_cracked_dirt",
+    "crystechmod:red_zone_dirt",
+    "minecraft:dirt",
+    "minecraft:stone",
+    "minecraft:granite",
+    "minecraft:diorite",
+    "minecraft:andesite",
+    "minecraft:stone_bricks",
+    "minecraft:cobblestone"
+  ]
+}

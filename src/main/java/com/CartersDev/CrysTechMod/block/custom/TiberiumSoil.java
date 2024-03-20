@@ -41,7 +41,7 @@ public class TiberiumSoil extends Block {
             }
 
 
-            //Soil Spread logic
+            //tree and plant corruption
 
         }
     }
