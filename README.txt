@@ -48,8 +48,8 @@ an explosion equivalant to a nuclear explosion. Frequently used as a "HAIL MARY"
 crystals and beamed back onto the cruiser they are assigned to.
 
 Core Technology also features a multi-stage metal alloy called "Core Steel" which has been used in everything from
-melee weapons, to Mecha, and space cruisers. Even though the Mecha WILL NOT be in this MOD, and the Cruisers will
-only be present as Crashed structures, Core steel will be a central part of your machinery, and even as a decoration
+ melee weapons, to Mecha, and space cruisers. Even though the Mecha WILL NOT be in this MOD, and the Cruisers will
+ only be present as Crashed structures, Core steel will be a central part of your machinery, and even as a decoration
  block as when finished it will be explosion proof, AND have a restraining effect on Tiberium spread.
 
 
