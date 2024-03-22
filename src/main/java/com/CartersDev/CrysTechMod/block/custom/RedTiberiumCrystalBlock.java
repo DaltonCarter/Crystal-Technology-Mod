@@ -5,8 +5,10 @@ import com.CartersDev.CrysTechMod.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CropsBlock;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.IItemProvider;
@@ -14,6 +16,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.Difficulty;
+import net.minecraft.world.Explosion;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 
@@ -67,4 +70,29 @@ public class RedTiberiumCrystalBlock extends CropsBlock {
         }
     }
 
+
+    @Override
+    public void onBlockHarvested(World worldIn, BlockPos pos, BlockState state, PlayerEntity player) {
+        super.onBlockHarvested(worldIn, pos, state, player);
+
+        String Enchantments = EnchantmentHelper.getEnchantments(player.getHeldItemMainhand()).toString();
+
+        if (!Enchantments.contains("net.minecraft.enchantment.SilkTouchEnchantment") && !player.isCreative()) {
+            worldIn.createExplosion(null, pos.getX(), pos.getY(), pos.getZ()
+                    , 4.0f, Explosion.Mode.DESTROY);
+        }
+
+    }
+
+    @Override
+    public boolean canDropFromExplosion(BlockState state, IBlockReader world, BlockPos pos, Explosion explosion) {
+        return true;
+    }
+
+    @Override
+    public void onExplosionDestroy(World world, BlockPos pos, Explosion explosion) {
+        world.createExplosion(null, pos.getX(), pos.getY(), pos.getZ()
+                , 4.0f, Explosion.Mode.DESTROY);
+        super.onExplosionDestroy(world, pos, explosion);
+    }
 }

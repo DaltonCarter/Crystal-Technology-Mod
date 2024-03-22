@@ -51,7 +51,7 @@ public class BlossomTreeSpout extends RotatedPillarBlock {
         int y = random.nextInt(15) - random.nextInt(15);
         int z = random.nextInt(10) - random.nextInt(10);
 
-//        BlockPos.get
+
         if(!worldIn.isRemote){
          BlockPos target = pos.add(x, y - 4, z);
          worldIn.getBlockState(target).getBlock();

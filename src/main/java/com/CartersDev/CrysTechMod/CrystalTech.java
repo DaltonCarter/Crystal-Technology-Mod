@@ -97,10 +97,12 @@ public class CrystalTech
             RenderTypeLookup.setRenderLayer(ModBlocks.BLUE_TIBERIUM_CROP.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.RED_TIBERIUM_CROP.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.PURPLE_TIBERIUM_CROP.get(), RenderType.getCutout());
+
             RenderTypeLookup.setRenderLayer(ModBlocks.RIPARIUS_CRYSTAL.get(), RenderType.getTranslucent());
             RenderTypeLookup.setRenderLayer(ModBlocks.VINIFERA_CRYSTAL.get(), RenderType.getTranslucent());
             RenderTypeLookup.setRenderLayer(ModBlocks.CRUENTUS_CRYSTAL.get(), RenderType.getTranslucent());
             RenderTypeLookup.setRenderLayer(ModBlocks.ABOREUS_CRYSTAL.get(), RenderType.getTranslucent());
+
             //Glass:
             RenderTypeLookup.setRenderLayer(ModBlocks.CLEAR_TIBERGLASS.get(), RenderType.getTranslucent());
             RenderTypeLookup.setRenderLayer(ModBlocks.BLACK_TIBERGLASS.get(), RenderType.getTranslucent());

@@ -9,6 +9,14 @@
           "children": [
             {
               "type": "minecraft:item",
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:silk_touch",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ],
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
@@ -29,18 +37,18 @@
       ]
     },
     {
-      "rolls": 1.0,
+      "rolls": {
+        "min": 1,
+        "max": 5
+      },
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
+          "enchantments": [
             {
-              "function": "minecraft:apply_bonus",
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:binomial_with_bonus_count",
-              "parameters": {
-                "extra": 5,
-                "probability": 0.5714286
+              "enchantment": "minecraft:silk_touch",
+              "levels": {
+                "min": 1
               }
             }
           ],

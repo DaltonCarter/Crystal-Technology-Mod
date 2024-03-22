@@ -35,12 +35,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> TIBERIUM_SOIL = registerBlock("tiberium_soil",
             () -> new TiberiumSoil(AbstractBlock.Properties.create(Material.EARTH)
                     .harvestLevel(3).harvestTool(ToolType.SHOVEL).tickRandomly()
-                    .setRequiresTool().hardnessAndResistance(5f).sound(SoundType.GROUND)));
+                    .setRequiresTool().hardnessAndResistance(5f, 1200.0f).sound(SoundType.GROUND)));
 
     public static final RegistryObject<Block> ICHOR_SOIL = registerBlock("ichor_soil",
             () -> new IchorSoil(AbstractBlock.Properties.create(Material.EARTH)
                     .harvestLevel(3).harvestTool(ToolType.SHOVEL).tickRandomly()
-                    .setRequiresTool().hardnessAndResistance(5f).sound(SoundType.GROUND)));
+                    .setRequiresTool().hardnessAndResistance(5f, 1200.0f).sound(SoundType.GROUND)));
 
     public static final RegistryObject<Block> INFESTED_STONE = registerBlock("infested_stone",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
@@ -185,32 +185,32 @@ public class ModBlocks {
     public static final RegistryObject<Block> GUNDANIUM_BLOCK = registerBlock("gundanium_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE)
-                    .setRequiresTool().hardnessAndResistance(5f)));
+                    .setRequiresTool().hardnessAndResistance(5f, 100.0f)));
 
     public static final RegistryObject<Block> ALYTHUM_BLOCK = registerBlock("alythum_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE)
-                    .setRequiresTool().hardnessAndResistance(5f)));
+                    .setRequiresTool().hardnessAndResistance(5f, 300.0f)));
 
     public static final RegistryObject<Block> ILLYRIM_BLOCK = registerBlock("illyrim_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE)
-                    .setRequiresTool().hardnessAndResistance(5f)));
+                    .setRequiresTool().hardnessAndResistance(5f, 700.0f)));
 
     public static final RegistryObject<Block> LG_CORE_BLOCK = registerBlock("lg_core_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE)
-                    .setRequiresTool().hardnessAndResistance(5f)));
+                    .setRequiresTool().hardnessAndResistance(5f, 200.0f)));
 
     public static final RegistryObject<Block> MG_CORE_BLOCK = registerBlock("mg_core_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE)
-                    .setRequiresTool().hardnessAndResistance(5f)));
+                    .setRequiresTool().hardnessAndResistance(5f, 500.0f)));
 
     public static final RegistryObject<Block> HG_CORE_BLOCK = registerBlock("hg_core_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE)
-                    .setRequiresTool().hardnessAndResistance(5f)));
+                    .setRequiresTool().hardnessAndResistance(5f, 1200.0f)));
 
     public static final RegistryObject<Block> TIBERIUM_BLOCK = registerBlock("tiberium_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
@@ -320,22 +320,22 @@ public class ModBlocks {
     public static final RegistryObject<Block> BLOSSOM_BASE = registerBlock("blossom_base",
             () -> new RotatedPillarBlock(AbstractBlock.Properties.create(Material.WOOD)
                     .harvestLevel(4).harvestTool(ToolType.AXE)
-                    .setRequiresTool().hardnessAndResistance(-1f)));
+                    .setRequiresTool().hardnessAndResistance(-1f, 5000.0f)));
 
     public static final RegistryObject<Block> BLOSSOM_CENTER = registerBlock("blossom_center",
             () -> new RotatedPillarBlock(AbstractBlock.Properties.create(Material.WOOD)
                     .harvestLevel(4).harvestTool(ToolType.AXE)
-                    .setRequiresTool().hardnessAndResistance(-1f)));
+                    .setRequiresTool().hardnessAndResistance(-1f, 5000.0f)));
 
     public static final RegistryObject<Block> BLOSSOM_SPOUT = registerBlock("blossom_spout",
             () -> new BlossomTreeSpout(AbstractBlock.Properties.create(Material.WOOD)
                     .harvestLevel(4).harvestTool(ToolType.AXE).tickRandomly()
-                    .setRequiresTool().hardnessAndResistance(-1f).setLightLevel(blossomglow)));
+                    .setRequiresTool().hardnessAndResistance(-1f, 5000.0f).setLightLevel(blossomglow)));
 
     public static final RegistryObject<Block> BLOSSOM_FILLER = registerBlock("blossom_filler",
             () -> new RotatedPillarBlock(AbstractBlock.Properties.create(Material.WOOD)
                     .harvestLevel(4).harvestTool(ToolType.AXE)
-                    .setRequiresTool().hardnessAndResistance(-1f)));
+                    .setRequiresTool().hardnessAndResistance(-1f, 5000.0f)));
     //End Wood
 
     //Deco Blocks:
@@ -910,12 +910,12 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> GREEN_TIBERIUM_CROP = BLOCKS.register("green_tiberium_crop",
             () -> new GreenTiberiumCrystalBlock(AbstractBlock.Properties.create(Material.IRON)
-                    .harvestLevel(3).doesNotBlockMovement().harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(2).doesNotBlockMovement().harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)));
 
     public static final RegistryObject<Block> BLUE_TIBERIUM_CROP = BLOCKS.register("blue_tiberium_crop",
             () -> new BlueTiberiumCrystalBlock(AbstractBlock.Properties.create(Material.IRON)
-                    .harvestLevel(3).doesNotBlockMovement().harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(2).doesNotBlockMovement().harvestTool(ToolType.PICKAXE)
                     .setRequiresTool().hardnessAndResistance(5f).setLightLevel(tiberiumglow)));
 
     public static final RegistryObject<Block> RED_TIBERIUM_CROP = BLOCKS.register("red_tiberium_crop",

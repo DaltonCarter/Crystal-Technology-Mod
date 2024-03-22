@@ -6,8 +6,8 @@ original Sci-fi technologies.
 
 THINGS YOU MIGHT RECOGNISE:
 ------------------------------------------
-One of the Dominant features of this mod is what I refer to as Tiberium Technology Which at it's roots is based upon
-Command and Conquer Tiberium Dawn, Tiberium Sun: Firestorm, and some aestheticfeatures from Tiberium Wars.
+One of the Dominant features of this mod is what I refer to as Tiberium Technology Which at its roots is based upon
+Command and Conquer Tiberium Dawn, Tiberium Sun: Firestorm, and some aesthetic features from Tiberium Wars.
 
 Things that are directly inspired by C & C include:
 1. Riparius (Green) Tiberium Crystal Growths, and Molten Liquid
@@ -32,14 +32,14 @@ Features that are directly inspired by Robotech:
 
 Peripheral features with modified elements of Mobile Suit Gundam are present in the form of:
 
-1. Gundanium Metal and equipment.
+1. Gundanium Metal and equipment. -Gundanium in the anime was an alloy, here it is a simple mineable metal.
 2. Weapons inspired by the Shows I.E Gundam Wings Buster Rifle, Beam Sabers*
 
 * All features marked are currently in development and may or may not be present in the code.
 
 With all of that in mind, this mod goes above and beyond those features by including features that are original:
 
-Core Technology: Originally thought up by my elder brother Che K Carter Core Technology Later became Crystal Core
+Core Technology: Originally thought up by my elder brother Che K Carter, Core Technology Later became Crystal Core
 Technology once I learned enough about it to make my own additions. It is HEAVILY inspired by Reflex Technology.
 
 This technology has at its center several different colored "Core Crystals" that each do something different. Most

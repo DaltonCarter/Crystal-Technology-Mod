@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/crop",
+  "parent": "minecraft:block/cross",
   "textures": {
-    "crop": "crystechmod:block/purple_tiberium_crop_stage7"
+    "cross": "crystechmod:block/purple_tiberium_crop_stage7"
   }
 }
