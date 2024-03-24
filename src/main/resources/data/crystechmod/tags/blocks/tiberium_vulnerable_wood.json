@@ -1,12 +1,18 @@
 {
   "replace": false,
   "values": [
-    "minecraft:acacia_logs",
-    "minecraft:oak_logs",
-    "minecraft:spruce_logs",
-    "minecraft:dark_oak_logs",
-    "minecraft:birch_logs",
-    "minecraft:jungle_logs"
+    "minecraft:acacia_log",
+    "minecraft:stripped_acacia_log",
+    "minecraft:oak_log",
+    "minecraft:stripped_oak_log",
+    "minecraft:spruce_log",
+    "minecraft:stripped_spruce_log",
+    "minecraft:dark_oak_log",
+    "minecraft:stripped_dark_oak_log",
+    "minecraft:birch_log",
+    "minecraft:stripped_birch_log",
+    "minecraft:jungle_log",
+    "minecraft:stripped_jungle_log"
 
   ]
 }
