@@ -1,6 +1,10 @@
 
 CRYSTAL TECHNOLOGY MOD
 -------------------------------------------
+
+NOTICE: THis MOD is being Migrated to 1.20.1. I haven't decided if I will finish both versions.
+
+
 The Short and sweet of this mod is that it is a combination of some of my favorite sci-fi technologies and my own
 original Sci-fi technologies.
 
